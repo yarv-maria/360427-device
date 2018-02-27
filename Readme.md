@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Мария Ярв](https://up.htmlacademy.ru/htmlcss/20/user/360427).
-* Наставник: `Неизвестно`.
+* Наставник: [Наталья Ильина](https://htmlacademy.ru/profile/ellianta).
 
 ---
 
