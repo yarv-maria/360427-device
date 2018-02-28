@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Gilroy ExtraBold";
+  src: url(/fonts/Gilroyextrabold.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy Light";
+  src: url(/fonts/Gilroylight.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.wrapper {
+  width: 100%;
+  min-width: 320px;
+  overflow: hidden;
+}
+
+.wrapper-inner {
+  width: 100%;
+  max-width: 1160px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/*------------------- HEADER ----------------------------*/
+
+header[role="banner"] {
+  margin: 40px 0 0 0;
+  padding: 0 60px;
+  background-color: #f7e296;
+}
+
+.logo {
+  position: relative;
+  top: -30px;
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 48px;
+  color: #000;
+  text-transform: uppercase;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  font-size: 18px;
+  color: #000;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.header-nav-list {
+  display: flex;
+  justify-content: space-between;
+  width: 500px;
+  margin: 0 0 40px 0;
+}
+
+.header-items,
+.user-account-options {
+  display: flex;
+  justify-content: space-between;
+
+}
