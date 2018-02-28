@@ -51,11 +51,6 @@ header[role="banner"] {
   text-transform: uppercase;
 }
 
-nav {
-  display: flex;
-  justify-content: space-between;
-}
-
 header a {
   font-family: "Gilroy ExtraBold", sans-serif;
   font-size: 18px;
@@ -64,16 +59,10 @@ header a {
   letter-spacing: 3px;
 }
 
+.header-items,
+.user-account-options,
+nav,
 .header-nav-list {
   display: flex;
-  justify-content: space-between;
-  width: 500px;
-  margin: 0 0 40px 0;
 }
 
-.header-items,
-.user-account-options {
-  display: flex;
-  justify-content: space-between;
-
-}
