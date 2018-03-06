@@ -54,22 +54,21 @@
 
   <h1 class="page-title"> Моноподы для селфи </h1>
 
-  <nav>
-    <ul class="breadcrumbs">
+  <nav class="breadcrumbs">
+    <ul class="breadcrumbs-list">
       <li> <a href="index.html"> Главная </a> </li>
       <li> <a href="#"> Каталог товаров </a> </li>
       <li class="breadcrumbs-current"> Моноподы для селфи </li>
     </ul>
   </nav>
 
-  <section class="filters">
-    <h2 class="visually-hidden"> Фильтр товаров </h2>
-    <h3> Фильтр: </h3>
-    <!-- Здесь будет форма -->
-  </section>
-
   <section class="catalog">
     <h2 class="visually-hidden"> Список моноподов для селфи </h2>
+    <div class="filters">
+      <h2 class="visually-hidden"> Фильтр товаров </h2>
+      <h3> Фильтр: </h3>
+      <!-- Здесь будет форма -->
+    </div>
     <div class="sorting">
       <h3> Сортировка: </h3>
       <ul class="sorting-list">
@@ -136,13 +135,15 @@
       </li>
     </ul>
 
-    <ul class="pagination-list">
-      <li class="pagination-item"> <a href="#"> Назад </a> </li>
-      <li class="pagination-item pagination-item-current"> <a> 1 </a> </li>
-      <li class="pagination-item"> <a href="#"> 2 </a> </li>
-      <li class="pagination-item"> <a href="#"> 3 </a> </li>
-      <li class="pagination-item"> <a href="#"> Вперед </a> </li>
-    </ul>
+    <nav class="pagination">
+      <ul class="pagination-list">
+        <li class="pagination-item"> <a href="#"> Назад </a> </li>
+        <li class="pagination-item pagination-item-current"> <a> 1 </a> </li>
+        <li class="pagination-item"> <a href="#"> 2 </a> </li>
+        <li class="pagination-item"> <a href="#"> 3 </a> </li>
+        <li class="pagination-item"> <a href="#"> Вперед </a> </li>
+      </ul>
+    </nav>
   </section>
 </main>
 
