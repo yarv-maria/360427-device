@@ -15,14 +15,14 @@
   <header class="page-header">
     <a class="header-logo"> Device </a>
     <div class="header-items">
-      <form class="search">
-        <label class="input" >
+      <form class="search" action="https://echo.htmlacademy.ru" method="post">
+        <label class="visually-hidden" > Поиск по сайту
           <input type="search" placeholder="Поиск по сайту">
         </label>
         <button type="submit" class="submit"> Найти </button>
       </form>
       <div class="user-block">
-        <a href="#" class="user-link user-link-login"> Войти </a>
+        <a href="login.html" class="user-link user-link-login"> Войти </a>
         <a href="#" class="user-link  user-link-compare"> Сравнить </a>
         <a href="#" class="user-link user-link-basket"> Корзина </a>
       </div>
@@ -53,11 +53,15 @@
 
     <!-- Раздел главной страницы Slider -->
     <section class="slider-device">
-      <ul class="slider-nav">
-        <li> <a href="#"> 1 </a> </li>
-        <li> <a href="#"> 2 </a> </li>
-        <li> <a href="#"> 3 </a> </li>
-      </ul>
+      <input type="radio" name="point" id="slide1" checked>
+      <input type="radio" name="point" id="slide2">
+      <input type="radio" name="point" id="slide3">
+      <div class="controls-slider">
+        <label for="slide1"></label>
+        <label for="slide2"></label>
+        <label for="slide3"></label>
+      </div>
+
       <div class="slide">
         <img class="slider-img" src="img/slider-img1.png" width="384" height="486" alt="Фото товара">
         <div class="slider-info">
@@ -141,11 +145,16 @@
 
     <!-- Раздел главной страницы Services -->
     <section class="services">
-      <ul class="services-list">
-        <li> <a href="#" class="button"> Доставка </a>
-        <li> <a href="#" class="button"> Гарантия </a>
-        <li> <a href="#" class="button"> Кредит </a>
-      </ul>
+      <h2 class="visually-hidden"> Список сервисов </h2>
+      <input type="radio" name="point" id="services1" checked>
+      <input type="radio" name="point" id="services2">
+      <input type="radio" name="point" id="services3">
+      <div class="controls-services">
+        <label class="button" for="services1"> Доставка </label>
+        <label class="button" for="services2"> Гарантия </label>
+        <label class="button" for="services3"> Кредит </label>
+      </div>
+
       <div class="slider-services">
         <div class="services-description services-delivery">
           <h2> Доставка </h2>
@@ -202,7 +211,7 @@
         <h2> Контакты </h2>
         <p> Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
           Всякое бывает.</p>
-        <iframe src="#" class="map"></iframe>
+        <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу: ул. Строителей 15, г.Москва">
         <a href="#" class="button"> Напишите нам </a>
       </section>
     </div>
@@ -231,13 +240,13 @@
     <div class="footer-row-bottom">
       <ul class="social">
         <li class="social-icons">
-          <a href="#" class="facebook"> Фэйсбук </a>
+          <a href="#" class="facebook"> <span class="visually-hidden"> Фэйсбук </span> </a>
         </li>
         <li class="social-icons">
-          <a href="#" class="instagram"> Инстаграм </a>
+          <a href="#" class="instagram"> <span class="visually-hidden"> Инстаграм </span> </a>
         </li>
         <li class="social-icons">
-          <a href="#" class="twitter"> Твиттер </a>
+          <a href="#" class="twitter"> <span class="visually-hidden"> Твиттер </span> </a>
         </li>
       </ul>
       <a href="http://htmlacademy.ru" class="htmlacademy-logo"></a>
@@ -246,7 +255,7 @@
 
   <section class="modal modal-login">
     <h2 class="visually-hidden"> Модальное окно регистрации </h2>
-    <span class="modal-close">x</span>
+    <button class="modal-close" type="button"> Закрыть </button>
     <form class="modal-login-form">
       <label class="input"> Ваше имя:
         <input type="text" placeholder="Имя фамилия" required>
@@ -259,6 +268,14 @@
       </label>
       <button type="submit" class="button button-modal-form"> Отправить </button>
     </form>
+  </section>
+
+  <section class="modal modal-map">
+    <h2 class="visually-hidden"> Как до нас добраться </h2>
+    <p>
+      <iframe src="#" class="map"> </iframe>
+    </p>
+    <button class="modal-close" type="button"> Закрыть </button>
   </section>
 
 </body>
