@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
   <meta charset="utf-8">
 
@@ -53,9 +53,9 @@
 
     <!-- Раздел главной страницы Slider -->
     <section class="slider-device">
-      <input type="radio" name="point" id="slide1" checked>
-      <input type="radio" name="point" id="slide2">
-      <input type="radio" name="point" id="slide3">
+      <input type="radio" name="point-slider" id="slide1" checked>
+      <input type="radio" name="point-slider" id="slide2">
+      <input type="radio" name="point-slider" id="slide3">
       <div class="controls-slider">
         <label for="slide1"></label>
         <label for="slide2"></label>
@@ -146,9 +146,9 @@
     <!-- Раздел главной страницы Services -->
     <section class="services">
       <h2 class="visually-hidden"> Список сервисов </h2>
-      <input type="radio" name="point" id="services1" checked>
-      <input type="radio" name="point" id="services2">
-      <input type="radio" name="point" id="services3">
+      <input type="radio" name="point-services" id="services1" checked>
+      <input type="radio" name="point-services" id="services2">
+      <input type="radio" name="point-services" id="services3">
       <div class="controls-services">
         <label class="button" for="services1"> Доставка </label>
         <label class="button" for="services2"> Гарантия </label>
@@ -211,7 +211,7 @@
         <h2> Контакты </h2>
         <p> Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
           Всякое бывает.</p>
-        <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу: ул. Строителей 15, г.Москва">
+        <a href="#"> <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу: ул. Строителей 15, г.Москва"> </a>
         <a href="#" class="button"> Напишите нам </a>
       </section>
     </div>
@@ -255,7 +255,7 @@
 
   <section class="modal modal-login">
     <h2 class="visually-hidden"> Модальное окно регистрации </h2>
-    <button class="modal-close" type="button"> Закрыть </button>
+    <button class="modal-close" type="button"> <span class="visually-hidden"> Закрыть </span> </button>
     <form class="modal-login-form">
       <label class="input"> Ваше имя:
         <input type="text" placeholder="Имя фамилия" required>
@@ -273,9 +273,9 @@
   <section class="modal modal-map">
     <h2 class="visually-hidden"> Как до нас добраться </h2>
     <p>
-      <iframe src="#" class="map"> </iframe>
+      <iframe class="map"> </iframe>
     </p>
-    <button class="modal-close" type="button"> Закрыть </button>
+    <button class="modal-close" type="button"> <span class="visually-hidden"> Закрыть </span> </button>
   </section>
 
 </body>
