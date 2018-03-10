@@ -16,8 +16,8 @@
   <a href="index.html" class="header-logo"> Device </a>
   <div class="header-items">
     <form class="search" action="https://echo.htmlacademy.ru" method="post">
-      <label class="visually-hidden" > Поиск по сайту
-        <input type="search">
+      <label>
+        <input type="search" placeholder="Поиск по сайту">
       </label>
       <button type="submit" class="submit"> Найти </button>
     </form>
@@ -70,37 +70,48 @@
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend> Стоимость: </legend>
-          <label>
-            <input type="range">
-          </label>
+          <div class="range">
+            <button class="toggle" type="button"></button>
+            <div class="line"></div>
+            <div class="line line-active"></div>
+            <button class="toggle" type="button"></button>
+          </div>
+          <div class="price-limit">
+            <label> от
+              <input type="text" placeholder="0">
+            </label>
+            <label> до
+              <input type="text" placeholder="5000">
+            </label>
+          </div>
         </fieldset>
 
         <fieldset>
           <legend> Цвет: </legend>
           <ul>
             <li class="filter-option">
-              <label> Черный
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="black" checked>
+              <label class="filter-input filter-input-checkbox"> Черный
+                <input class="visually-hidden" type="checkbox" name="black" checked>
               </label>
             </li>
             <li class="filter-option">
-              <label> Белый
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="white">
+              <label class="filter-input filter-input-checkbox"> Белый
+                <input class="visually-hidden" type="checkbox" name="white">
               </label>
             </li>
             <li class="filter-option">
-              <label> Синий
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="blue" checked>
+              <label class="filter-input filter-input-checkbox"> Синий
+                <input class="visually-hidden" type="checkbox" name="blue" checked>
               </label>
             </li>
             <li class="filter-option">
-              <label> Красный
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="red" checked>
+              <label class="filter-input filter-input-checkbox"> Красный
+                <input class="visually-hidden" type="checkbox" name="red" checked>
               </label>
             </li>
             <li class="filter-option">
-              <label> Розовый
-                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="pink">
+              <label class="filter-input filter-input-checkbox"> Розовый
+                <input class="visually-hidden" type="checkbox" name="pink">
               </label>
             </li>
           </ul>
@@ -127,9 +138,9 @@
     <div class="sorting">
       <h3> Сортировка: </h3>
       <ul class="sorting-list">
-        <li class="sorting-item sorting-item-current"> <button type="button"> По цене </button> </li>
-        <li class="sorting-item"> <button type="button"> По типу </button> </li>
-        <li class="sorting-item"> <button type="button"> По популярности </button> </li>
+        <li class="sorting-item sorting-item-current"> <a href="#"> По цене </a> </li>
+        <li class="sorting-item"> <a href="#"> По типу </a> </li>
+        <li class="sorting-item"> <a href="#"> По популярности </a> </li>
       </ul>
     </div>
     <ul class="catalog-list">
