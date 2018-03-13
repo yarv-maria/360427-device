@@ -10,6 +10,7 @@
 }
 
 body {
+  width: 100%;
   margin: 0;
   padding: 0;
   font-family: "Open Sans Light", Arial, sans-serif;
@@ -24,15 +25,6 @@ a {
   text-decoration: none;
 }
 
-.button {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -44,7 +36,33 @@ a {
   overflow: hidden;
 }
 
+.wrapper-inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.button {
+  padding: 0 25px;
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 2px;
+}
+
+.button::before {
+  content: "";
+  width: calc(100%);
+  height: 8px;
+  background-color: #f0c52e;
+}
+
 .button:hover {
+  padding: 10px 25px;
   background-color: #f0c52e;
 }
 
@@ -55,7 +73,16 @@ a {
 /*------------ HEADER -----------*/
 
 .page-header {
+  padding: 0 60px;
   background-color: #f7e296;
+}
+
+.header-logo:hover {
+  opacity: 0.6;
+}
+
+.header-logo:active {
+  opacity: 0.3;
 }
 
 .header-items-search input,
@@ -125,6 +152,7 @@ header nav,
 
 .header-nav-catalog,
 .header-nav-list {
+  padding: 0;
   list-style: none;
 }
 
@@ -183,6 +211,24 @@ header nav,
 
 .popular {
   display: flex;
+  justify-content: space-between;
+}
+
+.popular-item {
+  display: flex;
+  flex-direction: column;
+  width: 160px;
+}
+
+.popular-item p {
+  width: 160px;
+  height: 160px;
+  text-align: center;
+  line-height: 160px;
+}
+
+.popular-item img {
+  vertical-align: middle;
 }
 
 .popular a {
@@ -190,11 +236,6 @@ header nav,
   font-size: 18px;
   line-height: 24px;
   color: #000000;
-}
-
-.popular-item {
-  display: flex;
-  flex-direction: column;
 }
 
 .popular-item:active {
@@ -214,6 +255,88 @@ header nav,
 }
 
 /*------------ SERVICES -----------*/
+
+.services .wrapper-inner {
+  display: flex;
+}
+.controls-services {
+  display: flex;
+  flex-direction: column;
+}
+
+.slider-services h2,
+.info h2,
+.contact h2 {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.controls-services .button:active {
+  color: #f7e184;
+  background-color: #000000;
+}
+
+/*------------ LOGOTYPES -----------*/
+
+.logotypes-item {
+  opacity: 0.2;
+}
+
+.logotypes-img-dgi:hover {
+  background-image: url("/img/logotypes-Dji-hover.jpg");
+}
+
+/*------------ ABOUT-MARKET -----------*/
+
+.about-market {
+  display: flex;
+  justify-content: space-between;
+}
+
+.company-list {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000000;
+  list-style: none;
+}
+
+/*------------ FOOTER -----------*/
+
+.page-footer {
+  padding: 65px 0;
+  background-color: #464646;
+}
+
+.footer-row-top,
+.footer-row-center,
+.footer-row-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.page-footer a,
+.footer-row-center p {
+  color: #ffffff;
+}
+
+.footer-user-account-options a {
+  line-height: 36px;
+}
+
+.footer-nav-list {
+  display: flex;
+}
+
+.footer-nav-list a {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
 
 
 /*---------------------  INNER-PAGE -----------------------------*/
