@@ -1,12 +1,16 @@
 /*---------- GENERAL ----------*/
 @font-face {
   font-family: "Gilroy ExtraBold", sans-serif;
-  src: url("/fonts/gilroyextrabold.woff2");
+  src: url("/fonts/gilroyextrabold.woff2"),
+       url("/fonts/gilroyextrabold.woff") ;
+  font-weight: 700;
 }
 
 @font-face {
   font-family: "Gilroy Light", sans-serif;
-  src: url("/fonts/gilroylight.woff2");
+  src: url("/fonts/gilroylight.woff2"),
+       url("/fonts/gilroylight.woff");
+  font-weight: 300;
 }
 
 body {
@@ -323,7 +327,17 @@ header nav,
 }
 
 .footer-user-account-options a {
+  color: rgba(255, 255, 255, 0.7);
   line-height: 36px;
+}
+
+.footer-user-account-options a:hover {
+  color: #ffffff;
+}
+
+.footer-user-account-options a:active {
+  color: #ffffff;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-nav-list {
@@ -336,6 +350,19 @@ header nav,
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.footer-nav-list a:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-nav-list a:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.htmlacademy-logo:before {
+  content: "url("/img/logo-html.svg"";
+
 }
 
 
