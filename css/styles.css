@@ -1,5 +1,97 @@
+/*---------- GENERAL ----------*/
+@font-face {
+  font-family: "Gilroy ExtraBold", sans-serif;
+  src: url("/fonts/gilroyextrabold.woff2");
+}
 
-/*------------------- HEADER ----------------------------*/
+@font-face {
+  font-family: "Gilroy Light", sans-serif;
+  src: url("/fonts/gilroylight.woff2");
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  background-color: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/*------------ HEADER -----------*/
+
+.page-header {
+  background-color: #f7e296;
+}
+
+.header-items-search input,
+.header-items .submit,
+.user-link {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  background-color: transparent;
+  border: transparent;
+}
+
+.header-items-search input::placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-items-search:hover input::placeholder {
+  color: rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.header-items-search:focus input::placeholder {
+  color: #000000;
+  cursor: pointer;
+}
+
+.header-items-search input:focus {
+  border-bottom: 2px solid #000000;
+  outline: none;
+}
+
+.header-items-search:focus .submit {
+  border: 2px solid #000000;
+}
+
+.header-items-search .submit:hover {
+  color: #ffffff;
+  background-color: #000000;
+  cursor: pointer;
+}
+
+.header-items-search .submit:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #000000;
+  outline: none;
+}
 
 .header-items,
 header nav,
@@ -8,8 +100,74 @@ header nav,
   display: flex;
 }
 
-/*------------------- SLIDER ----------------------------*/
+.user-link {
+  color: #000000;
+}
 
-/*------------------- POPULAR ----------------------------*/
+.user-link:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.user-link:focus {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-nav-catalog,
+.header-nav-list {
+  list-style: none;
+}
+
+.header-nav-catalog a,
+.header-nav-list a {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.header-nav-catalog a:hover,
+.header-nav-list a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.header-nav-catalog a:active,
+.header-nav-list a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-nav-sub ul {
+  list-style: none;
+}
+
+.header-nav-sub a {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  text-transform: none;
+}
+
+/*------------ SLIDER ----------*/
+
+.slider-info h2 {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  color: #000000;
+}
+
+.device-parameters-value  td {
+  font-family: "Gilroy Light", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+}
+
+.device-parameters-name td {
+  font-size: 13px;
+  line-height: 20px;
+}
+/*------------POPULAR -----------*/
+
+/*---------------------  INNER-PAGE -----------------------------*/
 
 
