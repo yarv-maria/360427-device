@@ -33,6 +33,17 @@ a {
   letter-spacing: 2px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button:hover {
   background-color: #f0c52e;
 }
@@ -144,6 +155,7 @@ header nav,
   font-family: "Open Sans Light", Arial, sans-serif;
   font-size: 15px;
   line-height: 36px;
+  font-weight: 300;
   text-transform: none;
 }
 
@@ -166,7 +178,43 @@ header nav,
   font-size: 13px;
   line-height: 20px;
 }
+
 /*------------POPULAR -----------*/
+
+.popular {
+  display: flex;
+}
+
+.popular a {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.popular-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-item:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.popular-item-img {
+  background-color: #f7e296;
+}
+
+.popular-item-img:hover {
+  background-color: #f0c52e;
+}
+
+.popular-item-img:active img {
+  opacity: 0.3;
+}
+
+/*------------ SERVICES -----------*/
+
 
 /*---------------------  INNER-PAGE -----------------------------*/
 
