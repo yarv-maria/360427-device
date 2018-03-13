@@ -286,11 +286,23 @@ header nav,
 
 /*------------ LOGOTYPES -----------*/
 
+.logotypes {
+  display: flex;
+  justify-content: center;
+}
+
 .logotypes-item {
+  width: 260px;
+  height: 100px;
+  text-align: center;
   opacity: 0.2;
 }
 
-.logotypes-img-dgi:hover {
+.logotypes-item:hover img {
+  opacity: 0;
+}
+
+.logotypes-item:hover .logotypes-img-dgi {
   background-image: url("../img/logotypes-Dji-hover.jpg");
 }
 
