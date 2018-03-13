@@ -15,7 +15,8 @@
   font-style: normal;
 }
 
-body {
+body,
+.inner-page {
   width: 100%;
   margin: 0;
   padding: 0;
@@ -146,6 +147,7 @@ header nav,
 
 .user-link {
   color: #000000;
+  transition: 0.4s;
 }
 
 .user-link:hover {
@@ -169,6 +171,7 @@ header nav,
   line-height: 24px;
   color: #000000;
   text-transform: uppercase;
+  transition: 0.4s;
 }
 
 .header-nav-catalog a:hover,
@@ -200,6 +203,14 @@ header nav,
   font-size: 47px;
   line-height: 56px;
   color: #000000;
+}
+
+.slide {
+  display: flex;
+}
+
+.slider-img {
+  width: 560px;
 }
 
 .device-parameters-value  td {
@@ -250,6 +261,7 @@ header nav,
 
 .popular-item-img {
   background-color: #f7e296;
+  transition: 0.4s;
 }
 
 .popular-item-img:hover {
@@ -296,26 +308,31 @@ header nav,
   height: 100px;
   text-align: center;
   opacity: 0.2;
+  transition: 0.4s;
 }
 
 .logotypes-item:hover img {
   opacity: 0;
 }
 
-.logotypes-item:hover .logotypes-img-dgi {
+.logotypes-img-dgi:hover  {
   background-image: url("../img/logotypes-Dji-hover.jpg");
+  opacity: 1;
 }
 
 .logotypes-img-spgadgest:hover {
   background-image: url("../img/logotypes-SPGadgest-hover.jpg");
+  opacity: 1;
 }
 
 .logotypes-img-gopro:hover {
   background-image: url("../img/logotypes-GoPro-hover.jpg");
+  opacity: 1;
 }
 
 .logotypes-img-vive:hover {
   background-image: url("../img/logotypes-vive-hover.jpg");
+  opacity: 1;
 }
 
 /*------------ ABOUT-MARKET -----------*/
@@ -340,6 +357,14 @@ header nav,
   background-color: #464646;
 }
 
+.footer-logo:hover {
+  opacity: 0.6;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
+}
+
 .footer-row-top,
 .footer-row-center,
 .footer-row-bottom {
@@ -355,6 +380,7 @@ header nav,
 .footer-user-account-options a {
   color: rgba(255, 255, 255, 0.7);
   line-height: 36px;
+  transition: 0.4s;
 }
 
 .footer-user-account-options a:hover {
@@ -376,6 +402,7 @@ header nav,
   line-height: 24px;
   text-transform: uppercase;
   letter-spacing: 2px;
+  transition: 0.4s;
 }
 
 .footer-nav-list a:hover {
@@ -387,11 +414,167 @@ header nav,
 }
 
 .htmlacademy-logo:before {
-
-
+  content: "";
+  background: url("../img/logo-html.svg") no-repeat;
 }
 
+/*------------ MODAL-LOGIN   -----------*/
+
+.modal-login-form .input,
+.modal-login-form .textarea {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.modal-login-form input,
+.modal-login-form textarea {
+  font-family: "Open Sans Light", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.modal-login-form input:hover,
+.modal-login-form textarea:hover {
+  background-color: #eaeaea;
+  cursor: pointer;
+}
+.modal-login-form input:focus,
+.modal-login-form textarea:focus {
+  background-color: #ffffff;
+  border: 2px solid #f7e296;
+  outline: none;
+  cursor: pointer;
+}
+
+.modal-login-form input:invalid {
+  background-color: #f6dada;
+  border: none;
+}
+
+.modal-login-form .input::placeholder,
+.modal-login-form .textarea::placeholder{
+  color: rgba(70, 70, 70, 0.4)
+}
+
+.modal-login-form .button-modal-form {
+  background-color: transparent;
+  border: transparent;
+}
+
+.button-modal-form:hover {
+  padding: 10px 25px;
+  background-color: #f0c52e;
+}
+
+.button-modal-form:active {
+  color: rgba(0, 0, 0, 0.3);
+  outline: none;
+}
 
 /*---------------------  INNER-PAGE -----------------------------*/
 
+/*------------ BREADCRUMBS   -----------*/
+
+.wrapper-inner-breadcrumbs h1,
+.wrapper-inner-breadcrumbs .breadcrumbs {
+  padding: 0 60px;
+}
+
+.wrapper-inner-breadcrumbs h1 {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  color: #000000;
+}
+
+.breadcrumbs-list {
+  display: flex;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs-list a,
+.breadcrumbs-current {
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+}
+
+.breadcrumbs-list a:hover {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.breadcrumbs-list a:active {
+  color: rgba(0, 0, 0, 0.1)
+}
+
+/*------------ CATALOG   -----------*/
+
+.catalog {
+  display: flex;
+}
+
+.sorting h3,
+.filters h3 {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+/*------------ Filters   -----------*/
+
+.filters {
+  background-color: #efefef;
+}
+
+/*------------ Sorting   -----------*/
+
+.sorting-list-left,
+.sorting-list-right,
+.catalog-list {
+  list-style: none;
+}
+
+.sorting-list-left,
+.sorting-list-right {
+  display: flex;
+}
+
+.sorting-list-left a {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3);
+  transition: 0.4s;
+}
+
+.sorting-list-left a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.sorting-left-item-current a,
+.sorting-list-left a:active{
+  color: #000000;
+}
+
+/*------------ Catalog-list   -----------*/
+
+.product-item-wrapper {
+  display: flex;
+}
+
+.product-item-wrapper a {
+  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+}
 

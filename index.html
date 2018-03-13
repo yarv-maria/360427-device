@@ -76,7 +76,9 @@
         </div>
 
         <div class="slide">
-          <img class="slider-img" src="img/slider-img1.png" width="384" height="486" alt="Фото товара">
+          <div class="slider-img">
+            <img src="img/slider-img1.png" width="384" height="486" alt="Фото товара">
+          </div>
           <div class="slider-info">
             <h2> Делай селфи, как Бен Стиллер </h2>
             <p> Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом
@@ -97,7 +99,9 @@
           </div>
         </div>
         <div class="slide">
-          <img class="slider-img" src="img/slider-img2.png" width="345" height="485" alt="Фото товара">
+          <div class="slider-img">
+            <img src="img/slider-img2.png" width="345" height="485" alt="Фото товара">
+          </div>
           <div class="slider-info">
             <h2> Худеем правильно </h2>
             <p> Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету. </p>
@@ -113,7 +117,9 @@
           </div>
         </div>
         <div class="slide">
-          <img class="slider-img" src="img/slider-img3.png" width="526" height="334" alt="Фото товара">
+          <div class="slider-img">
+            <img src="img/slider-img3.png" width="526" height="334" alt="Фото товара">
+          </div>
           <div class="slider-info">
             <h2> Порхает как бабочка,жалит как пчела! </h2>
             <p> Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под
@@ -214,17 +220,17 @@
     <div class="wrapper-inner">
       <section class="logotypes">
         <h2 class="visually-hidden"> Список логотипов </h2>
-        <a href="#" class="logotypes-item">
-          <img class="logotypes-img-dgi" src="img/logotypes-Dji.jpg" width="260" height="100" alt="Логотип Dji">
+        <a href="#" class="logotypes-item logotypes-img-dgi">
+          <img src="img/logotypes-Dji.jpg" width="260" height="100" alt="Логотип Dji">
         </a>
-        <a href="#" class="logotypes-item">
-          <img class="logotypes-img-spgadgest" src="img/logotypes-SPGadgest.jpg" width="260" height="100" alt="Логотип SPGadgest">
+        <a href="#" class="logotypes-item logotypes-img-spgadgest">
+          <img src="img/logotypes-SPGadgest.jpg" width="260" height="100" alt="Логотип SPGadgest">
         </a>
-        <a href="#" class="logotypes-item">
-          <img class="logotypes-img-gopro" src="img/logotypes-GoPro.jpg" width="260" height="100" alt="Логотип GoPro">
+        <a href="#" class="logotypes-item logotypes-img-gopro">
+          <img src="img/logotypes-GoPro.jpg" width="260" height="100" alt="Логотип GoPro">
         </a>
-        <a href="#" class="logotypes-item">
-          <img class="logotypes-img-vive" src="img/logotypes-vive.jpg" width="260" height="100" alt="Логотип Vive">
+        <a href="#" class="logotypes-item logotypes-img-vive">
+          <img src="img/logotypes-vive.jpg" width="260" height="100" alt="Логотип Vive">
         </a>
       </section>
 
@@ -260,7 +266,9 @@
   <footer class="page-footer">
     <div class="wrapper-inner">
       <div class="footer-row-top">
-        <a class="footer-logo"> Device </a>
+        <a href="index.html" class="footer-logo">
+          <img src="img/logo-footer.svg" alt="Логотип" width="164px" height="36px">
+        </a>
         <div class="footer-user-account-options">
           <a href="#" class="footer-enter"> Войти </a>
           <a href="#" class="footer-compare"> Сравнить </a>
@@ -299,12 +307,12 @@
     <button class="modal-close" type="button"> <span class="visually-hidden"> Закрыть </span> </button>
     <form class="modal-login-form">
       <label class="input"> Ваше имя:
-        <input type="text" placeholder="Имя фамилия" required>
+        <input type="text" placeholder="Имя фамилия">
       </label>
       <label class="input"> Ваш e-mail
         <input type="email" placeholder="email@example.com">
       </label>
-      <label> Текст письма:
+      <label class="textarea"> Текст письма:
         <textarea placeholder="В свободной форме"></textarea>
       </label>
       <button type="submit" class="button button-modal-form"> Отправить </button>
