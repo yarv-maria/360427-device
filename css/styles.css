@@ -1,16 +1,16 @@
 /*---------- GENERAL ----------*/
 @font-face {
-  font-family: "Gilroy ExtraBold", sans-serif;
-  src: url("../fonts/gilroyextrabold.woff2")format('woff2'),
-       url("../fonts/gilroyextrabold.woff")format('woff');
+  font-family: "Gilroy";
+  src: url("../fonts/gilroyextrabold.woff2") format('woff2'),
+       url("../fonts/gilroyextrabold.woff") format('woff');
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Gilroy Light", sans-serif;
-  src: url("/fonts/gilroylight.woff2")format('woff2'),
-       url("/fonts/gilroylight.woff")format('woff');
+  font-family: "Gilroy";
+  src: url("/fonts/gilroylight.woff2") format('woff2'),
+       url("/fonts/gilroylight.woff") format('woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -20,7 +20,7 @@ body,
   width: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
@@ -51,9 +51,10 @@ a {
 
 .button {
   padding: 0 25px;
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
@@ -95,10 +96,7 @@ a {
 .header-items-search input,
 .header-items .submit,
 .user-link {
-  font-family: "Open Sans Light", Arial, sans-serif;
-  font-size: 15px;
-  line-height: 30px;
-  font-weight: 300;
+  font-family: inherit;
   background-color: transparent;
   border: transparent;
 }
@@ -164,11 +162,12 @@ header nav,
   list-style: none;
 }
 
-.header-nav-catalog a,
+.catalog-product-button,
 .header-nav-list a {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
   color: #000000;
   text-transform: uppercase;
   transition: 0.4s;
@@ -189,19 +188,18 @@ header nav,
 }
 
 .header-nav-sub a {
-  font-family: "Open Sans Light", Arial, sans-serif;
-  font-size: 15px;
   line-height: 36px;
-  font-weight: 300;
   text-transform: none;
+  color: #000000;
 }
 
 /*------------ SLIDER ----------*/
 
 .slider-info h2 {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 56px;
+  font-weight: 800;
   color: #000000;
 }
 
@@ -214,9 +212,10 @@ header nav,
 }
 
 .device-parameters-value  td {
-  font-family: "Gilroy Light", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
+  font-weight: 300;
 }
 
 .device-parameters-name td {
@@ -232,8 +231,6 @@ header nav,
 }
 
 .popular-item {
-  display: flex;
-  flex-direction: column;
   width: 160px;
 }
 
@@ -249,9 +246,10 @@ header nav,
 }
 
 .popular a {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
   color: #000000;
 }
 
@@ -285,9 +283,10 @@ header nav,
 .slider-services h2,
 .info h2,
 .contact h2 {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
+  font-weight: 800;
   color: #000000;
 }
 
@@ -343,9 +342,10 @@ header nav,
 }
 
 .company-list {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
+  font-weight: 800;
   color: #000000;
   list-style: none;
 }
@@ -355,6 +355,10 @@ header nav,
 .page-footer {
   padding: 65px 0;
   background-color: #464646;
+}
+
+.footer-logo {
+  transition: 0.4s;
 }
 
 .footer-logo:hover {
@@ -370,6 +374,7 @@ header nav,
 .footer-row-bottom {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-footer a,
@@ -397,9 +402,10 @@ header nav,
 }
 
 .footer-nav-list a {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
   transition: 0.4s;
@@ -413,27 +419,44 @@ header nav,
   color: rgba(255, 255, 255, 0.3);
 }
 
-.htmlacademy-logo:before {
-  content: "";
+.htmlacademy-logo {
   background: url("../img/logo-html.svg") no-repeat;
+  width: 26px;
+  height: 34px;
+  transition: 0.4s;
+}
+
+.htmlacademy-logo:hover {
+  opacity: 0.6;
+}
+
+.htmlacademy-logo:active {
+  opacity: 0.3;
+}
+
+.footer-row-bottom:before {
+  content: "";
+  width: 80px;
+  height: 7px;
+  background-color: #ffc600;
 }
 
 /*------------ MODAL-LOGIN   -----------*/
 
 .modal-login-form .input,
 .modal-login-form .textarea {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
   color: #000000;
 }
 
 .modal-login-form input,
 .modal-login-form textarea {
-  font-family: "Open Sans Light", Arial, sans-serif;
+  font-family: inherit;
   font-size: 14px;
   line-height: 18px;
-  font-weight: 300;
   background-color: #f2f2f2;
   border: none;
 }
@@ -486,9 +509,10 @@ header nav,
 }
 
 .wrapper-inner-breadcrumbs h1 {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
+  font-weight: 800;
   color: #000000;
 }
 
@@ -522,9 +546,10 @@ header nav,
 
 .sorting h3,
 .filters h3 {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #000000;
@@ -534,6 +559,53 @@ header nav,
 
 .filters {
   background-color: #efefef;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+}
+
+.price-limit label,
+.price-limit input::placeholder {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.price-limit input {
+  border: 0;
+  background-color: transparent;
+}
+
+fieldset ul {
+  list-style: none;
+}
+
+.filter-input {
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 300;
+  color: #000000;
+}
+
+input[type="checkbox"]:disabled .filter-input {
+  color: #a6a6a6;
+}
+
+.filter-button {
+  background-color: transparent;
+  border: none;
 }
 
 /*------------ Sorting   -----------*/
@@ -571,10 +643,97 @@ header nav,
   display: flex;
 }
 
+.product-item-wrapper h3 {
+  margin: 0;
+}
+
 .product-item-wrapper a {
-  font-family: "Gilroy ExtraBold", Arial, sans-serif;
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  font-weight: 800;
   color: #000000;
 }
+
+.product-price {
+  font-size: 16px;
+  line-height: 24px;
+  color: #464646;
+}
+
+.compare {
+  font-size: 13px;
+  line-height: 36px;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.compare:hover {
+  color: #000000;
+}
+
+.compare:active {
+  color: rgba(0, 0, 0, 0.2)
+}
+
+/*------------ Pagination   -----------*/
+
+.pagination-list {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  background-color: #ebebeb;
+  list-style: none;
+}
+
+.backward,
+.forward {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #000000;
+}
+
+.pagination-item:first-child:hover,
+.pagination-item:last-child:hover {
+  background-color: #d9d9d9;
+}
+
+.pagination-item:first-child:hover,
+.pagination-item:last-child:hover {
+  background-color: #d9d9d9;
+}
+
+.backward:active,
+.forward:active {
+ color: rgba(0, 0, 0, 0.3);
+}
+
+.backward {
+  margin-right: auto;
+}
+
+.forward {
+  margin-left: auto;
+}
+
+.page-number {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.page-number:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.page-number:active,
+.pagination-item-current {
+  color: #000000;
+}
+
 
