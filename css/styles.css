@@ -62,13 +62,6 @@ a {
   letter-spacing: 2px;
 }
 
-.button::before {
-  content: "";
-  width: calc(100%);
-  height: 8px;
-  background-color: #f0c52e;
-}
-
 .button:hover {
   padding: 10px 25px;
   background-color: #f0c52e;
@@ -85,11 +78,11 @@ a {
   background-color: #f7e296;
 }
 
-.header-logo:hover {
+.header-logo[href]:hover {
   opacity: 0.6;
 }
 
-.header-logo:active {
+.header-logo[href]:active {
   opacity: 0.3;
 }
 
@@ -107,12 +100,10 @@ a {
 
 .header-items-search:hover input::placeholder {
   color: rgba(0, 0, 0, 0.6);
-  cursor: pointer;
 }
 
 .header-items-search:focus input::placeholder {
   color: #000000;
-  cursor: pointer;
 }
 
 .header-items-search input:focus {
@@ -127,7 +118,6 @@ a {
 .header-items-search .submit:hover {
   color: #ffffff;
   background-color: #000000;
-  cursor: pointer;
 }
 
 .header-items-search .submit:active {
@@ -170,6 +160,7 @@ header nav,
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
+  letter-spacing: 2px;
   transition: 0.4s;
 }
 
@@ -310,28 +301,28 @@ header nav,
   transition: 0.4s;
 }
 
+.logotypes-item:hover {
+  opacity: 1;
+}
+
 .logotypes-item:hover img {
   opacity: 0;
 }
 
-.logotypes-img-dgi:hover  {
+.logotypes-item-dgi:hover  {
   background-image: url("../img/logotypes-Dji-hover.jpg");
-  opacity: 1;
 }
 
-.logotypes-img-spgadgest:hover {
+.logotypes-item-spgadgest:hover {
   background-image: url("../img/logotypes-SPGadgest-hover.jpg");
-  opacity: 1;
 }
 
-.logotypes-img-gopro:hover {
+.logotypes-item-gopro:hover {
   background-image: url("../img/logotypes-GoPro-hover.jpg");
-  opacity: 1;
 }
 
-.logotypes-img-vive:hover {
+.logotypes-item-vive:hover {
   background-image: url("../img/logotypes-vive-hover.jpg");
-  opacity: 1;
 }
 
 /*------------ ABOUT-MARKET -----------*/
@@ -357,15 +348,15 @@ header nav,
   background-color: #464646;
 }
 
-.footer-logo {
+.footer-logo[href] {
   transition: 0.4s;
 }
 
-.footer-logo:hover {
+.footer-logo[href]:hover {
   opacity: 0.6;
 }
 
-.footer-logo:active {
+.footer-logo[href]:active {
   opacity: 0.3;
 }
 
