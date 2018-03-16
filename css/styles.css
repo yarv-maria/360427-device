@@ -221,7 +221,7 @@ header nav,
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 4px;
+  letter-spacing: 3px;
   transition: 0.4s;
 }
 
@@ -261,6 +261,18 @@ header nav,
   padding: 20px 60px 35px;
   background-color: #f7e296;
   z-index: 1;
+}
+
+.catalog-product-button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 6px;
+  left: 230px;
+  width: 16px;
+  height: 16px;
+  background: url("../img/plus.svg");
+  opacity: 0.3;
 }
 
 .catalog-product-button:hover .header-nav-sub {
