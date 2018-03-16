@@ -15,6 +15,25 @@
   font-style: normal;
 }
 
+body > * {
+  outline: 1px solid red;
+}
+
+body > * > * {
+  outline: 1px dashed blue;
+  outline-offset: -1px;
+}
+
+body > * > * > * {
+  outline: 1px dashed green;
+  outline-offset: -1px;
+}
+
+body > * > * > * > * {
+  outline: 1px dashed gray;
+  outline-offset: -1px;
+}
+
 body,
 .inner-page {
   width: 100%;
@@ -26,6 +45,14 @@ body,
   font-weight: 300;
   color: #464646;
   background-color: #ffffff;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*::before, *::after {
+  box-sizing: inherit;
 }
 
 a {
@@ -74,12 +101,33 @@ a {
 /*------------ HEADER -----------*/
 
 .page-header {
-  padding: 0 60px;
+  position: relative;
+  margin: 40px 0 0 0;
+  padding: 50px 60px;
   background-color: #f7e296;
 }
 
+.header-logo {
+  position: absolute;
+  top: -18px;
+ }
+
 .header-logo[href]:hover {
   opacity: 0.6;
+}
+
+.header-items-search {
+  width: 500px;
+  margin: 0 40px 0 0;
+}
+
+.user-block {
+  display: flex;
+  width: 500px;
+}
+
+.user-link-login {
+  margin: 0 auto 0 0;
 }
 
 .header-logo[href]:active {
@@ -148,6 +196,7 @@ header nav,
 
 .header-nav-catalog,
 .header-nav-list {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -175,6 +224,8 @@ header nav,
 }
 
 .header-nav-sub ul {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -676,8 +727,8 @@ input[type="checkbox"]:disabled .filter-input {
   list-style: none;
 }
 
-.backward,
-.forward {
+.backward a,
+.forward a {
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -697,8 +748,8 @@ input[type="checkbox"]:disabled .filter-input {
   background-color: #d9d9d9;
 }
 
-.backward:active,
-.forward:active {
+.backward:active a,
+.forward:active a {
  color: rgba(0, 0, 0, 0.3);
 }
 
@@ -710,7 +761,8 @@ input[type="checkbox"]:disabled .filter-input {
   margin-left: auto;
 }
 
-.page-number {
+.page-number a {
+  margin: 0 auto;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -718,12 +770,12 @@ input[type="checkbox"]:disabled .filter-input {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.page-number:hover {
+.page-number:hover a {
   color: rgba(0, 0, 0, 0.6);
 }
 
-.page-number:active,
-.pagination-item-current {
+.page-number:active a,
+.pagination-item-current a {
   color: #000000;
 }
 
