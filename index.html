@@ -35,7 +35,7 @@
       </div>
       <nav>
         <ul class="header-nav-catalog">
-          <li> <a href="device-catalog.html" class="catalog-product-button"> Каталог товаров </a>
+          <li class="catalog-product"> <a href="device-catalog.html" class="catalog-product-button"> Каталог товаров </a>
             <div class="header-nav-sub">
               <ul>
                 <li> <a href="#"> Виртуальная реальность </a> </li>
@@ -67,22 +67,24 @@
     <div class="wrapper-inner">
       <!-- Раздел главной страницы Slider -->
       <section class="slider-device">
-        <input type="radio" name="point-slider" id="slide1" checked>
-        <input type="radio" name="point-slider" id="slide2">
-        <input type="radio" name="point-slider" id="slide3">
-        <div class="controls-slider">
-          <label for="slide1"></label>
-          <label for="slide2"></label>
-          <label for="slide3"></label>
+        <div class="controls-slider-device">
+          <input type="radio" name="point-slider" id="slide1" checked>
+          <input type="radio" name="point-slider" id="slide2">
+          <input type="radio" name="point-slider" id="slide3">
+          <div class="controls-slider">
+            <label for="slide1"></label>
+            <label for="slide2"></label>
+            <label for="slide3"></label>
+          </div>
         </div>
 
-        <div class="slide">
+        <div class="slide slide1">
           <div class="slider-img">
             <img src="img/slider-img1.png" width="384" height="486" alt="Фото товара">
           </div>
           <div class="slider-info">
             <h2> Делай селфи, <br> как Бен Стиллер </h2>
-            <p> Самая длинная палка для селфи доступна в нашем магазине.Восемь (Восемь, Карл!) метров длиной и весом
+            <p> Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом
               всего 5 килограмм. </p>
             <a href="#" class="button"> Подробнее </a>
             <table class="device-parameters">
@@ -99,7 +101,7 @@
             </table>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide slide2">
           <div class="slider-img">
             <img src="img/slider-img2.png" width="345" height="485" alt="Фото товара">
           </div>
@@ -117,7 +119,7 @@
             </table>
           </div>
         </div>
-        <div class="slide">
+        <div class="slide slide3">
           <div class="slider-img">
             <img src="img/slider-img3.png" width="526" height="334" alt="Фото товара">
           </div>
@@ -187,9 +189,9 @@
       <div class="wrapper-inner">
         <h2 class="visually-hidden"> Список сервисов </h2>
         <div class="controls">
-          <input type="radio" name="point-services" id="services1" checked>
-          <input type="radio" name="point-services" id="services2">
-          <input type="radio" name="point-services" id="services3">
+          <input class="visually-hidden" type="radio" name="point-services" id="services1" checked>
+          <input class="visually-hidden" type="radio" name="point-services" id="services2">
+          <input class="visually-hidden" type="radio" name="point-services" id="services3">
           <div class="controls-services">
             <label class="button" for="services1"> Доставка </label>
             <label class="button" for="services2"> Гарантия </label>
@@ -200,17 +202,17 @@
         <div class="slider-services">
           <div class="services-description services-delivery">
             <h2> Доставка </h2>
-            <p> Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-              заработаем, поднимая его на ваш этаж. </p>
+            <p> Мы с удовольствием доставим ваш товар прямо к вашему <br> подъезду совершенно бесплатно!
+              Ведь мы неплохо <br> заработаем, поднимая его на ваш этаж. </p>
           </div>
           <div class="services-description services-security">
             <h2> Гарантия </h2>
-            <p> Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый.
-              Товар, не дом, конечно же. </p>
+            <p> Если из-за возгорания купленного у нас товара у вас сгорит <br> дом — не переживайте,
+              мы выдадим вам новый. <br> Товар, не дом, конечно же. </p>
           </div>
           <div class="services-description services-credit">
             <h2> Кредит </h2>
-            <p> Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+            <p> Залезть в долговую яму стало проще! Кредитные <br>  консультанты подберут для вас наиболее выгодные <br>
               условия кредита. Выгодные для нашего банка, разумеется. </p>
           </div>
         </div>
