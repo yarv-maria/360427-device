@@ -793,11 +793,22 @@ header nav,
 
 /*---------------------  INNER-PAGE -----------------------------*/
 
+.inner-page .header-inner {
+  min-height: 185px;
+}
+
 /*------------ BREADCRUMBS   -----------*/
+.breadcrumbs {
+  margin: 0 0 40px 0;
+}
 
 .wrapper-inner-breadcrumbs h1,
 .wrapper-inner-breadcrumbs .breadcrumbs {
   padding: 0 60px;
+}
+
+.page-title {
+  margin: 40px 0 20px 0;
 }
 
 .wrapper-inner-breadcrumbs h1 {
@@ -810,6 +821,8 @@ header nav,
 
 .breadcrumbs-list {
   display: flex;
+  align-items: center;
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -850,6 +863,7 @@ header nav,
 /*------------ Filters   -----------*/
 
 .filters {
+  padding: 0 0 0 200px;
   background-color: #efefef;
 }
 
