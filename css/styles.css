@@ -107,7 +107,6 @@ a {
 }
 
 .header-inner {
-  position: relative;
   min-height: 300px;
   padding: 45px 60px;
   background-color: #f7e296;
@@ -115,8 +114,8 @@ a {
 }
 
 .header-logo {
-  position: absolute;
-  top: -18px;
+  display: block;
+  margin: -65px 0 20px 0;
  }
 
 .header-logo[href]:hover {
@@ -441,6 +440,7 @@ header nav,
 /*------------ SERVICES -----------*/
 
 .services {
+  margin: 0 0 180px 0;
   padding: 45px 0;
 }
 
@@ -515,11 +515,16 @@ header nav,
   background-position: 550px top;
 }
 
+.services-description h2 {
+  margin: 25px 0 30px 0;
+}
+
 /*------------ LOGOTYPES -----------*/
 
 .logotypes {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 0 110px 0;
 }
 
 .logotypes-item {
@@ -559,6 +564,28 @@ header nav,
 .about-market {
   display: flex;
   justify-content: space-between;
+}
+
+.company-list,
+ .info {
+  width: 560px;
+}
+
+.info {
+  margin: 0 40px 0 0;
+}
+
+.about-market h2 {
+  margin: 40px 0;
+}
+
+.about-market p {
+  margin: 0 0 35px 0;
+}
+
+.company-list {
+  margin: 40px 0;
+  padding: 0;
 }
 
 .company-list {
