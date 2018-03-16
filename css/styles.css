@@ -48,10 +48,12 @@ body,
 }
 
 html {
-  box-sizing: border-box;
-}
+   box-sizing: border-box;
+ }
 
-*::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: inherit;
 }
 
@@ -101,9 +103,13 @@ a {
 /*------------ HEADER -----------*/
 
 .page-header {
+  padding: 40px 20px 0;
+}
+
+.wrapper-inner-header {
   position: relative;
-  margin: 40px 0 0 0;
-  padding: 50px 60px;
+  min-height: 300px;
+  padding: 45px 60px;
   background-color: #f7e296;
 }
 
@@ -116,22 +122,42 @@ a {
   opacity: 0.6;
 }
 
-.header-items-search {
+.header-logo[href]:active {
+  opacity: 0.3;
+}
+
+.header-nav-catalog,
+.header-nav-list,
+.header-nav-sub ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-items,
+header nav,
+.header-nav-list {
+  display: flex;
+}
+
+.header-items {
+  margin: 0 0 35px 0;
+}
+
+.header-items-search,
+.header-nav-catalog {
   width: 500px;
   margin: 0 40px 0 0;
 }
 
-.user-block {
+.user-block,
+.header-nav-list {
   display: flex;
   width: 500px;
 }
 
 .user-link-login {
   margin: 0 auto 0 0;
-}
-
-.header-logo[href]:active {
-  opacity: 0.3;
 }
 
 .header-items-search input,
@@ -174,13 +200,6 @@ a {
   outline: none;
 }
 
-.header-items,
-header nav,
-.header-nav-sub,
-.header-nav-list {
-  display: flex;
-}
-
 .user-link {
   color: #000000;
   transition: 0.4s;
@@ -194,13 +213,6 @@ header nav,
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header-nav-catalog,
-.header-nav-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .catalog-product-button,
 .header-nav-list a {
   font-family: "Gilroy", Arial, sans-serif;
@@ -209,7 +221,7 @@ header nav,
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 4px;
   transition: 0.4s;
 }
 
@@ -223,17 +235,49 @@ header nav,
   color: rgba(0, 0, 0, 0.3);
 }
 
-.header-nav-sub ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
 .header-nav-sub a {
   line-height: 36px;
   text-transform: none;
   color: #000000;
 }
+
+.header-nav-list li:first-child {
+  margin: 0 35px 0 0;
+}
+
+.header-nav-list li:last-child {
+  margin: 0 0 0 auto;
+}
+
+.header-nav-catalog {
+  position: relative;
+}
+
+.header-nav-sub {
+  position: absolute;
+  left: -60px;
+  display: none;
+  width: 1160px;
+  padding: 20px 60px 35px;
+  background-color: #f7e296;
+  z-index: 1;
+}
+
+.catalog-product-button:hover .header-nav-sub {
+  display: flex;
+}
+
+.header-nav-sub ul:first-child {
+  width: 200px;
+  margin: 0 40px 0 0;
+}
+
+.header-nav-sub ul:nth-child(2),
+.header-nav-sub ul:last-child {
+  width: 160px;
+  margin: 0 40px 0 0;
+}
+
 
 /*------------ SLIDER ----------*/
 
