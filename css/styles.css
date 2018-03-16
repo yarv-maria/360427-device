@@ -79,10 +79,10 @@ a {
 }
 
 .button {
-  padding: 0 25px;
+  min-height: 46px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 46px;
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
@@ -92,7 +92,6 @@ a {
 }
 
 .button:hover {
-  padding: 10px 25px;
   background-color: #f0c52e;
 }
 
@@ -576,25 +575,35 @@ header nav,
 }
 
 .about-market h2 {
-  margin: 40px 0;
+  margin: 40px 0 45px 0;
 }
 
-.about-market p {
-  margin: 0 0 35px 0;
-}
-
-.company-list {
-  margin: 40px 0;
-  padding: 0;
+.info p {
+  margin: 0 0 30px 0;
 }
 
 .company-list {
+  margin: 65px 0 0 0;
+  padding: 0 0 0 35px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
   font-weight: 800;
   color: #000000;
   list-style: none;
+}
+
+.contact p {
+  margin: 0 0 40px 0;
+}
+
+.contact-map {
+  display: inline-block;
+}
+
+.about-market .button {
+  display: inline-block;
+  margin: 65px 0 90px 0;
 }
 
 /*------------ FOOTER -----------*/
@@ -616,17 +625,37 @@ header nav,
   opacity: 0.3;
 }
 
+.footer-logo {
+  height: 36px;
+}
+
 .footer-row-top,
 .footer-row-center,
 .footer-row-bottom {
   display: flex;
   justify-content: space-between;
+}
+
+.footer-row-top {
   align-items: center;
+  margin: 0 0 30px 0;
 }
 
 .page-footer a,
 .footer-row-center p {
   color: #ffffff;
+}
+
+.footer-row-center p,
+.footer-row-center ul {
+  margin: 0;
+  padding: 0;
+}
+
+.footer-user-account-options {
+  display: flex;
+  justify-content: space-between;
+  width: 330px;
 }
 
 .footer-user-account-options a {
@@ -644,8 +673,14 @@ header nav,
   color: rgba(255, 255, 255, 0.3);
 }
 
+.footer-row-center {
+  margin: 0 0 60px 0;
+}
+
 .footer-nav-list {
   display: flex;
+  justify-content: space-between;
+  width: 440px;
 }
 
 .footer-nav-list a {
@@ -664,6 +699,16 @@ header nav,
 
 .footer-nav-list a:active {
   color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-row-bottom {
+  align-items: center;
+}
+
+.footer-row-bottom .social {
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .htmlacademy-logo {
