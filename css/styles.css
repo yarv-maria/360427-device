@@ -915,10 +915,21 @@ input[type="checkbox"]:disabled .filter-input {
 }
 
 /*------------ Sorting   -----------*/
+.sorting {
+  display: flex;
+  align-items: center;
+}
+
+.filters h3,
+.sorting h3 {
+  margin: 0;
+}
 
 .sorting-list-left,
 .sorting-list-right,
 .catalog-list {
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -944,6 +955,18 @@ input[type="checkbox"]:disabled .filter-input {
 }
 
 /*------------ Catalog-list   -----------*/
+
+.catalog-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 800px;
+  padding: 0 20px;
+}
+
+.product-item {
+  width: 360px;
+}
 
 .product-item-wrapper {
   display: flex;
