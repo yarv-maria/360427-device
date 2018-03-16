@@ -106,7 +106,7 @@ a {
   padding: 40px 20px 0;
 }
 
-.wrapper-inner-header {
+.header-inner {
   position: relative;
   min-height: 300px;
   padding: 45px 60px;
@@ -306,7 +306,19 @@ header nav,
 }
 
 .slider-img {
-  width: 560px;
+  width: 500px;
+  margin: 0 40px 80px 0;
+  text-align: center;
+}
+
+.slider-info {
+  width: 500px;
+  margin: 80px 0 0 0;
+}
+
+.slider-info h2,
+.slider-info p {
+  margin: 0;
 }
 
 .device-parameters-value  td {
