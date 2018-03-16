@@ -275,7 +275,7 @@ header nav,
   opacity: 0.3;
 }
 
-.catalog-product-button:hover .header-nav-sub {
+.catalog-product-button:hover + .header-nav-sub {
   display: flex;
 }
 
@@ -289,7 +289,6 @@ header nav,
   width: 160px;
   margin: 0 40px 0 0;
 }
-
 
 /*------------ SLIDER ----------*/
 
@@ -320,6 +319,11 @@ header nav,
 .slider-info p {
   margin: 0;
 }
+
+.slider-info h2 {
+  margin: 0 0 40px 0;
+}
+
 
 .device-parameters-value  td {
   font-family: "Gilroy", Arial, sans-serif;
