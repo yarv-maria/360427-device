@@ -510,9 +510,11 @@ header nav,
   background-color: #000000;
 }
 
-.controls-services .button {
+.slider-services-button {
+  width: 160px;
   margin: 0 0 40px 0;
-  padding: 0;
+  padding:  8px 0;
+  text-align: center;
 }
 
 .controls-services .button:last-child {
@@ -534,6 +536,8 @@ header nav,
 }
 
 .controls-services .button:active {
+  width: 280px;
+  padding: 8px 120px 8px 0;
   color: #f7e184;
   background-color: #000000;
 }
@@ -631,13 +635,29 @@ header nav,
 
 .company-list {
   margin: 65px 0 0 0;
-  padding: 0 0 0 35px;
+  padding: 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 40px;
   font-weight: 800;
   color: #000000;
   list-style: none;
+}
+
+.company-list li {
+  position: relative;
+  padding: 0 0 0 35px;
+}
+
+.company-list li:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 4px);
+  left: 10px;
+  width: 8px;
+  height: 8px;
+  border: 2px solid #e5e5e5;
+  border-radius: 50%;
 }
 
 .contact p {
@@ -894,10 +914,12 @@ header nav,
 
 .catalog {
   display: flex;
-  width: 1200px;
-  padding: 0 20px;
-  margin: 0 auto;
 }
+
+.wrapper-catalog {
+  width: calc(50% + 250px);
+}
+
 
 .sorting h3,
 .filters h3 {
@@ -913,10 +935,14 @@ header nav,
 /*------------ Filters   -----------*/
 
 .filters {
-  width: 360px;
-  margin: 0 40px 0 0;
-  padding: 0 32px 0 60px;
+  display: flex;
+  justify-content: flex-end;
+  width: calc(50% - 250px);
   background-color: #efefef;
+}
+
+.wrapper-filters {
+  width: 270px;
 }
 
 .filters fieldset {

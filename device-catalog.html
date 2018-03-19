@@ -79,74 +79,76 @@
   <section class="catalog">
     <h2 class="visually-hidden"> Список моноподов для селфи </h2>
     <div class="filters">
-      <h3> Фильтр: </h3>
-      <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-        <fieldset>
-          <legend> Стоимость: </legend>
-          <div class="range">
-            <button class="toggle" type="button"></button>
-            <div class="line"></div>
-            <div class="line line-active"></div>
-            <button class="toggle" type="button"></button>
-          </div>
-          <div class="price-limit">
-            <label> от
-              <input type="text" placeholder="0">
-            </label>
-            <label> до
-              <input type="text" placeholder="5000">
-            </label>
-          </div>
-        </fieldset>
+      <div class="wrapper-filters">
+        <h3> Фильтр: </h3>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+            <legend> Стоимость: </legend>
+            <div class="range">
+              <button class="toggle" type="button"></button>
+              <div class="line"></div>
+              <div class="line line-active"></div>
+              <button class="toggle" type="button"></button>
+            </div>
+            <div class="price-limit">
+              <label> от
+                <input type="text" placeholder="0">
+              </label>
+              <label> до
+                <input type="text" placeholder="5000">
+              </label>
+            </div>
+          </fieldset>
 
-        <fieldset>
-          <legend> Цвет: </legend>
-          <ul>
-            <li class="filter-option">
-              <label class="filter-input filter-input-checkbox"> Черный
-                <input class="visually-hidden" type="checkbox" name="black" checked>
-              </label>
-            </li>
-            <li class="filter-option">
-              <label class="filter-input filter-input-checkbox"> Белый
-                <input class="visually-hidden" type="checkbox" name="white" disabled>
-              </label>
-            </li>
-            <li class="filter-option">
-              <label class="filter-input filter-input-checkbox"> Синий
-                <input class="visually-hidden" type="checkbox" name="blue" checked>
-              </label>
-            </li>
-            <li class="filter-option">
-              <label class="filter-input filter-input-checkbox"> Красный
-                <input class="visually-hidden" type="checkbox" name="red" checked>
-              </label>
-            </li>
-            <li class="filter-option">
-              <label class="filter-input filter-input-checkbox"> Розовый
-                <input class="visually-hidden" type="checkbox" name="pink">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
+          <fieldset>
+            <legend> Цвет: </legend>
+            <ul>
+              <li class="filter-option">
+                <label class="filter-input filter-input-checkbox"> Черный
+                  <input class="visually-hidden" type="checkbox" name="black" checked>
+                </label>
+              </li>
+              <li class="filter-option">
+                <label class="filter-input filter-input-checkbox"> Белый
+                  <input class="visually-hidden" type="checkbox" name="white" disabled>
+                </label>
+              </li>
+              <li class="filter-option">
+                <label class="filter-input filter-input-checkbox"> Синий
+                  <input class="visually-hidden" type="checkbox" name="blue" checked>
+                </label>
+              </li>
+              <li class="filter-option">
+                <label class="filter-input filter-input-checkbox"> Красный
+                  <input class="visually-hidden" type="checkbox" name="red" checked>
+                </label>
+              </li>
+              <li class="filter-option">
+                <label class="filter-input filter-input-checkbox"> Розовый
+                  <input class="visually-hidden" type="checkbox" name="pink">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
 
-        <fieldset>
-          <legend> Bluetooth: </legend>
-          <ul>
-            <li class="filter-option">
-              <label> Есть
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="yes" checked>
-              </label>
-            </li>
-            <li class="filter-option">
-              <label> Нет
-                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="no">
-              </label>
-            </li>
-          </ul>
-        </fieldset>
-        <button type="submit" class="button filter-button"> Показать </button>
-      </form>
+          <fieldset>
+            <legend> Bluetooth: </legend>
+            <ul>
+              <li class="filter-option">
+                <label> Есть
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="yes" checked>
+                </label>
+              </li>
+              <li class="filter-option">
+                <label> Нет
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="product-group" value="no">
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="button filter-button"> Показать </button>
+        </form>
+      </div>
     </div>
 
     <div class="wrapper-catalog">
