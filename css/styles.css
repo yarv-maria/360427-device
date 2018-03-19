@@ -873,7 +873,9 @@ header nav,
 /*------------ Filters   -----------*/
 
 .filters {
-  padding: 0 0 0 200px;
+  width: 360px;
+  margin: 0 40px 0 0;
+  padding: 0 32px 0 60px;
   background-color: #efefef;
 }
 
@@ -971,7 +973,6 @@ input[type="checkbox"]:disabled .filter-input {
   justify-content: space-between;
   flex-wrap: wrap;
   width: 800px;
-  padding: 0 20px;
 }
 
 .product-item {
