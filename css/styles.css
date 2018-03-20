@@ -184,6 +184,7 @@ header nav,
 }
 
 .header-items-search input {
+  border: none;
   border-bottom: 2px solid transparent;
 }
 
