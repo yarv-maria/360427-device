@@ -625,8 +625,8 @@ header nav,
 }
 
 .controls-services .button:active {
-  width: 300px;
-  padding: 8px 120px 8px 0;
+  width: 290px;
+  padding: 8px 110px 8px 0;
   color: #f7e184;
   background-color: #000000;
 }
