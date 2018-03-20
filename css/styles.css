@@ -174,21 +174,21 @@ header nav,
   width: 500px;
 }
 
-.search-input input,
+.header-items-search input,
 .search-submit,
 .user-link {
   font-family: inherit;
   background-color: transparent;
-  border: transparent;
+  border: 2px solid transparent;
 }
 
-.search-input input,
+.header-items-search input,
 .search-submit {
   min-height: 48px;
   padding: 9px 20px;
 }
 
-.search-input input {
+.header-items-search input {
   padding:  9px 20px 9px 40px;
   border: 2px solid transparent;
 }
@@ -207,7 +207,7 @@ header nav,
   background: url("../img/search.svg") no-repeat 0 0;
 }
 
-.search-input input::placeholder {
+.header-items-search input::placeholder {
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -215,7 +215,7 @@ header nav,
   color: rgba(0, 0, 0, 0.6);
 }
 
-.search-input:focus input::placeholder {
+.header-items-searcht input:focus input::placeholder {
   color: #000000;
 }
 
@@ -224,7 +224,7 @@ header nav,
   outline: none;
 }
 
-.search-input:focus  + .search-submit {
+.header-items-search input:focus  + .search-submit {
   border: 2px solid #000000;
 }
 
@@ -428,16 +428,12 @@ header nav,
   color: #ffffff;
 }
 
-.controls-slider-device {
+.controls-slider {
   display: flex;
   width: 120px;
   position: absolute;
   right: 80px;
   bottom: 155px;
-}
-
-.controls-slider {
-  display: flex;
 }
 
 .controls-slider label {
@@ -450,7 +446,25 @@ header nav,
   z-index: 100;
 }
 
-.controls-slider-device input:checked +.controls-slider label:before {
+.slider-device #slide1:checked ~ .controls-slider label:nth-of-type(1):before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background: url("../img/slider-button.svg") no-repeat 0 0;
+  z-index: 101;
+}
+
+.slider-device #slide2:checked ~ .controls-slider label:nth-of-type(2):before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  background: url("../img/slider-button.svg") no-repeat 0 0;
+  z-index: 101;
+}
+
+.slider-device #slide3:checked ~ .controls-slider label:nth-of-type(3):before {
   content: "";
   position: absolute;
   width: 23px;
@@ -531,6 +545,10 @@ header nav,
 
 .popular-item img {
   vertical-align: middle;
+}
+
+.popular-item:nth-child(3) img {
+  vertical-align: bottom;
 }
 
 .popular a {
@@ -624,11 +642,12 @@ header nav,
   color: #000000;
 }
 
-.controls-services .button:active {
+.controls-services .slider-services-button:active {
   width: 290px;
   padding: 8px 110px 8px 0;
   color: #f7e184;
   background-color: #000000;
+  z-index: 100;
 }
 
 .services-delivery {
@@ -1027,7 +1046,6 @@ header nav,
 .login-form-item input,
 .login-form-item textarea {
   padding: 19px 20px;
-  border: 2px solid black;
 }
 
 .login-form-item textarea {
@@ -1061,7 +1079,7 @@ header nav,
   font-size: 14px;
   line-height: 18px;
   background-color: #f2f2f2;
-  border: none;
+  border: 2px solid #ffffff;
 }
 
 .modal-login-form input:hover,

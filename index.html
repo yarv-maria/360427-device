@@ -22,9 +22,8 @@
       </a>
       <div class="header-items">
         <form class="header-items-search" action="https://echo.htmlacademy.ru" method="post">
-          <label class="search-input">
-            <input type="search" placeholder="Поиск по сайту">
-          </label>
+          <label class="search-input" for="search"></label>
+          <input type="search" id="search" placeholder="Поиск по сайту">
           <button type="submit" class="search-submit"> Найти </button>
         </form>
         <div class="user-block">
@@ -67,7 +66,6 @@
     <div class="wrapper-inner">
       <!-- Раздел главной страницы Slider -->
       <section class="slider-device">
-        <div class="controls-slider-device">
          <input type="radio" name="point-slider" id="slide1" checked>
          <input type="radio" name="point-slider" id="slide2">
          <input type="radio" name="point-slider" id="slide3">
@@ -76,7 +74,6 @@
            <label for="slide2"></label>
            <label for="slide3"></label>
          </div>
-        </div>
 
         <div class="slide slide1">
           <div class="slider-img">
@@ -155,7 +152,7 @@
           <p class="popular-item-img">
             <img src="img/popular-2.svg" width="86" height="117" alt="Монопод">
           </p>
-          Моноподы для селфи
+          Моноподы для&nbsp;селфи
         </a>
         <a href="#" class="popular-item">
           <p class="popular-item-img">
