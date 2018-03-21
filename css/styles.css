@@ -1342,15 +1342,76 @@ fieldset {
 fieldset:before {
   content: "";
   position: absolute;
-  top: -18px;
+  top: -16px;
   width: 200px;
-  height: 3px;
+  height: 1.5px;
   background: #000000;
 }
 
 fieldset ul {
   list-style: none;
 }
+
+.range {
+  position: relative;
+  margin: 25px 0 0 0;
+}
+
+.line {
+  width: 200px;
+  height: 1.5px;
+  background: #dbdbdb;
+}
+
+.line-active {
+  position: relative;
+  top: -2px;
+  width: 115px;
+  height: 2px;
+  background: #91c92f;
+}
+
+.toggle {
+  position: absolute;
+  top: -10px;
+  width: 20px;
+  height: 20px;
+  border: transparent;
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 #dadada;
+}
+
+.toggle-min {
+  right: 140px;
+  z-index: 1;
+}
+
+
+.toggle:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: calc(50% - 2px);
+  width: 5px;
+  height: 5px;
+  border: transparent;
+  background: #ababab;
+  border-radius: 50%;
+}
+
+.toggle:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 2px);
+  left: calc(50% - 2px);
+  width: 5px;
+  height: 5px;
+  border: transparent;
+  background: #ababab;
+  border-radius: 50%;
+}
+
 
 .filter-input {
   position: relative;
