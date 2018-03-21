@@ -1380,11 +1380,12 @@ fieldset ul {
   background: #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 0 0 #dadada;
+  cursor: pointer;
+  z-index: 1;
 }
 
-.toggle-min {
+.toggle-max {
   right: 140px;
-  z-index: 1;
 }
 
 
@@ -1411,7 +1412,6 @@ fieldset ul {
   background: #ababab;
   border-radius: 50%;
 }
-
 
 .filter-input {
   position: relative;
