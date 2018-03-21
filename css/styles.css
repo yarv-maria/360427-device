@@ -1334,11 +1334,26 @@ header nav,
   background-color: transparent;
 }
 
+fieldset {
+  position: relative;
+  margin:  0 0 40px 0;
+}
+
+fieldset:before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  width: 200px;
+  height: 3px;
+  background: #000000;
+}
+
 fieldset ul {
   list-style: none;
 }
 
 .filter-input {
+  position: relative;
   font-family: inherit;
   font-size: 14px;
   line-height: 40px;
@@ -1346,13 +1361,79 @@ fieldset ul {
   color: #000000;
 }
 
-input[type="checkbox"]:disabled .filter-input {
+input[type="checkbox"]:not(checked) + .filter-input:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 12px);
+  left: -40px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url("../img/checkbox-off.svg") no-repeat 0 0;
+}
+
+input[type="checkbox"]:not(checked) + .filter-input:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 12px);
+  left: -40px;
+  display: block;
+  width: 23px;
+  height: 23px;
+  background: url("../img/checkbox-on.svg") no-repeat 0 0;
+  opacity: 0;
+}
+
+input[type="checkbox"]:checked + .filter-input:after {
+  opacity: 1;
+}
+
+input[type="checkbox"]:disabled + .filter-input {
   color: #a6a6a6;
+}
+input[type="checkbox"]:disabled + .filter-input:before {
+  opacity: 0.25;
+}
+
+input[type="radio"]:not(checked) + .filter-input:before {
+  content: "";
+  position: absolute;
+  top: calc(50% - 12px);
+  left: -40px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url("../img/radio-off.svg") no-repeat 0 0;
+}
+
+input[type="radio"]:not(checked) + .filter-input:after {
+  content: "";
+  position: absolute;
+  top: calc(50% - 12px);
+  left: -40px;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: url("../img/radio-on.svg") no-repeat 0 0;
+  opacity: 0;
+}
+
+input[type="radio"]:checked + .filter-input:after {
+  opacity: 1;
+}
+
+input[type="radio"]:disabled + .filter-input {
+  color: #a6a6a6;
+}
+
+input[type="radio"]:disabled + .filter-input:before {
+  opacity: 0.25;
 }
 
 .filter-button {
   background-color: transparent;
   border: none;
+  z-index: 1;
 }
 
 /*------------ Sorting   -----------*/
