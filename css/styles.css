@@ -9,8 +9,8 @@
 
 @font-face {
   font-family: "Gilroy";
-  src: url("/fonts/gilroylight.woff2") format('woff2'),
-       url("/fonts/gilroylight.woff") format('woff');
+  src: url("../fonts/gilroylight.woff2") format('woff2'),
+       url("../fonts/gilroylight.woff") format('woff');
   font-weight: 300;
   font-style: normal;
 }
@@ -1272,6 +1272,7 @@ header nav,
 
 .wrapper-catalog {
   width: calc(50% + 180px);
+  z-index: 1;
 }
 
 
@@ -1503,17 +1504,15 @@ input[type="checkbox"]:disabled .filter-input {
 
 .product-buy {
   position: absolute;
-  top: 160px;
-  left: 70px;
+  top: 0;
   display: none;
+  width: 360px;
+  height: 380px;
   flex-direction: column;
+  background: rgba(255, 255, 255, 0.6);
+  justify-content: center;
   align-items: center;
-  width: 220px;
   z-index: 1;
-}
-
-.product-item:hover img {
-  opacity: 0.7;
 }
 
 .product-item:hover .product-buy {
