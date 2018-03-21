@@ -1439,8 +1439,8 @@ input[type="checkbox"]:not(checked) + .filter-input:after {
   top: calc(50% - 12px);
   left: -40px;
   display: block;
-  width: 23px;
-  height: 23px;
+  width: 27px;
+  height: 27px;
   background: url("../img/checkbox-on.svg") no-repeat 0 0;
   opacity: 0;
 }
