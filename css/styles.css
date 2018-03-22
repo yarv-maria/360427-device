@@ -735,7 +735,7 @@ header nav,
 }
 
 .services-description {
-  width: 875px;
+  width: 1160px;
   padding: 60px 0 60px 120px;
 }
 
@@ -744,11 +744,11 @@ header nav,
 }
 
 .wrapper-inner-services #services2:checked ~ .slider-services  {
-  transform: translateX(-875px);
+  transform: translateX(-1160px);
 }
 
 .wrapper-inner-services #services3:checked ~ .slider-services {
-  transform: translateX(-1750px);
+  transform: translateX(-2320px);
 }
 
 .slider-services h2,
