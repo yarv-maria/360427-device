@@ -396,13 +396,13 @@ header nav,
 
 .slider-device {
   position: relative;
-  margin: -110px 60px 95px 0;
-  padding: 0 0 0 60px;
+  width: 1160px;
+  margin: -110px 0 95px 0;
   overflow: hidden;
 }
 
 .slider-inner {
-  width: 3120px;
+  width: 300%;
   display: flex;
   overflow: hidden;
 }
@@ -410,19 +410,15 @@ header nav,
 .slide {
   display: flex;
   position: relative;
-  width: 1040px;
-}
-
-.slide2,
-.slide3{
-  position: relative;
+  width: 1160px;
+  padding: 0 60px;
 }
 
 .slide:before {
   content: "";
   position: absolute;
   top: 35px;
-  left: 540px;
+  left: 600px;
   width: 100px;
   height: 8px;
   background-color: #ffffff;
@@ -432,7 +428,7 @@ header nav,
   content: "01";
   position: absolute;
   top: -15px;
-  right: -10px;
+  right: 50px;
   font-family: "Gilroy", Arial, sans-serif;;
   font-size: 180px;
   line-height: 180px;
@@ -444,19 +440,20 @@ header nav,
   content: "02";
   position: absolute;
   top: -15px;
-  right: -10px;
+  right: 50px;
   font-family: "Gilroy", Arial, sans-serif;;
   font-size: 180px;
   line-height: 180px;
   font-weight: 800;
   color: #ffffff;
+  z-index: 1  ;
 }
 
 .slide3:after {
   content: "03";
   position: absolute;
   top: -15px;
-  right: -10px;
+  right: 50px;
   font-family: "Gilroy", Arial, sans-serif;;
   font-size: 180px;
   line-height: 180px;
@@ -469,7 +466,7 @@ header nav,
   display: flex;
   width: 100px;
   position: absolute;
-  right: 20px;
+  right: 80px;
   bottom: 158px;
 }
 
@@ -478,11 +475,11 @@ header nav,
 }
 
 .slider-device #slide2:checked ~ .slider-inner {
-  transform: translateX(-1040px);
+  transform: translateX(-1160px);
 }
 
 .slider-device #slide3:checked ~ .slider-inner {
-  transform: translateX(-2080px);
+  transform: translateX(-2320px);
 }
 
 .controls-slider label {
@@ -526,6 +523,10 @@ header nav,
   width: 500px;
   margin: 0 40px 0 0;
   padding: 0 30px;
+}
+
+.slide2 .slider-img {
+  text-align: center;
 }
 
 .slide3 .slider-img {
@@ -634,7 +635,7 @@ header nav,
 
 .services {
   margin: 0 0 85px 0;
-  padding: 75px 0;
+  padding: 75px 0 65px 0;
   background: linear-gradient(to bottom, #ffffff 0px, #ffffff 180px, #e5e5e5 180px)  ;
 }
 
@@ -642,35 +643,17 @@ header nav,
   position: relative;
   display: flex;
   align-items: center;
-  padding: 65px 0;
   overflow: hidden;
 }
 
 .controls-services {
   display: flex;
-  width: 280px;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 240px 0 0;
-  padding: 0 0 0 18px;
-}
-
-.services .wrapper-inner:after {
-  content: "";
-  position: absolute;
-  left: 300px;
-  width: 8px;
-  height: 320px;
-  background-color: #000000;
-}
-
-.slider-services-button {
-  width: 165px;
-  margin: 0 0 22px 0;
-  padding: 0 25px;
-  text-align: center;
-  line-height: 40px;
-  z-index: 1;
+  flex-shrink: 0;
+  width: 285px;
+  padding: 80px 0;
+  border-right: 8px solid #000000;
 }
 
 .controls-services .button:last-child {
@@ -678,7 +661,7 @@ header nav,
 }
 
 .controls-services .slider-services-button:active:before {
-  width: 290px;
+  width: 280px;
   padding: 0;
   background-color: #000000;
 }
@@ -686,6 +669,15 @@ header nav,
 .controls-services .slider-services-button:active {
   color: #f7e184;
   z-index: 100;
+}
+
+.slider-services-button {
+  width: 165px;
+  margin: 5px 0 22px 0;
+  padding: 0 25px;
+  text-align: center;
+  line-height: 40px;
+  z-index: 1;
 }
 
 .wrapper-inner-services #services1:checked ~ .controls-services .slider-services-button:nth-of-type(1) {
@@ -697,9 +689,9 @@ header nav,
   content: "";
   position: absolute;
   top: 0;
-  width: 290px;
+  width: 280px;
   height: 100%;
-  padding: 8px 110px 8px 0;
+  padding: 8px 100px 8px 0;
   background-color: #000000;
   color: #f7e184;
 }
@@ -713,7 +705,7 @@ header nav,
   content: "";
   position: absolute;
   top: 0;
-  width: 290px;
+  width: 280px;
   height: 100%;
   padding: 8px 110px 8px 0;
   background-color: #000000;
@@ -729,7 +721,7 @@ header nav,
   content: "";
   position: absolute;
   top: 0;
-  width: 290px;
+  width: 280px;
   height: 100%;
   padding: 8px 110px 8px 0;
   background-color: #000000;
@@ -739,12 +731,12 @@ header nav,
 .slider-services {
   position: relative;
   display: flex;
-  width: 2280px;
-  overflow: hidden;
+  width: 300%;
 }
 
 .services-description {
-  width: 840px;
+  width: 875px;
+  padding: 60px 0 60px 120px;
 }
 
 .wrapper-inner-services #services1:checked ~ .slider-services {
@@ -752,11 +744,11 @@ header nav,
 }
 
 .wrapper-inner-services #services2:checked ~ .slider-services  {
-  transform: translateX(-760px);
+  transform: translateX(-875px);
 }
 
 .wrapper-inner-services #services3:checked ~ .slider-services {
-  transform: translateX(-1520px);
+  transform: translateX(-1750px);
 }
 
 .slider-services h2,
@@ -771,21 +763,21 @@ header nav,
 
 .services-delivery {
   background: url("../img/delivery.svg") no-repeat;
-  background-position: 560px 10px;
+  background-position: 670px 75px;
 }
 
 .services-security {
   background: url("../img/warranty.svg") no-repeat;
-  background-position: 560px 10px;
+  background-position: 670px 60px;
 }
 
 .services-credit {
   background: url("../img/credit.svg") no-repeat;
-  background-position: 560px 10px;
+  background-position: 670px 60px;
 }
 
 .services-description h2 {
-  margin: 15px 0 30px 0;
+  margin: 5px 0 30px 0;
 }
 
 .services-description p {
