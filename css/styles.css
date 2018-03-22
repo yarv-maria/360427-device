@@ -1223,7 +1223,7 @@ ul.footer-nav-list {
 }
 
 .breadcrumbs-list li {
-  margin: 0 20px 0 0;
+  margin: 0 10px 0 0;
 }
 
 .breadcrumbs-list a {
@@ -1235,7 +1235,7 @@ ul.footer-nav-list {
   content: "";
   position: absolute;
   top: calc(50% - 3px);
-  right: -30px;
+  right: -20px;
   width: 6px;
   height: 6px;
   border: 1px solid transparent;
@@ -1370,7 +1370,7 @@ fieldset {
   margin: 0 0 15px 0;
 }
 
-fieldset:before {
+legend:before {
   content: "";
   position: absolute;
   top: -12px;
@@ -1551,14 +1551,11 @@ input[type="radio"]:not(checked):active + .filter-input:after {
 .sorting {
   display: flex;
   align-items: center;
+  margin: 0 0 70px 0;
 }
 
 .sorting h3 {
   margin: 0 55px 0 0;
-}
-
-.sorting {
-  margin: 0 0 75px 0;
 }
 
 .sorting-list-left,
@@ -1650,7 +1647,7 @@ input[type="radio"]:not(checked):active + .filter-input:after {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 15px 0 0 0;
+  margin: 20px 0 0 0;
 }
 
 .product-item-wrapper h3 {
@@ -1710,7 +1707,7 @@ input[type="radio"]:not(checked):active + .filter-input:after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0 0 75px 0;
+  margin: -10px 0 75px 0;
   padding: 0;
   background-color: #ebebeb;
   list-style: none;
@@ -1774,11 +1771,12 @@ input[type="radio"]:not(checked):active + .filter-input:after {
 /*------------ FOOTER   -----------*/
 
 .inner-page .footer-row-top {
-  align-items: flex-start;
+  align-items: center;
 }
 
 .inner-page .user-block-footer {
-  width: 500px;
+  width: 480px;
+  margin: 7px 0 0 0;
 }
 
 .inner-page .user-link-footer {
