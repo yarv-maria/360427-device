@@ -396,18 +396,25 @@ header nav,
 
 .slider-device {
   position: relative;
-  margin: -110px 0 95px 0;
-  padding: 0 60px;
+  margin: -110px 60px 95px 0;
+  padding: 0 0 0 60px;
+  overflow: hidden;
+}
+
+.slider-inner {
+  width: 3120px;
+  display: flex;
+  overflow: hidden;
 }
 
 .slide {
   display: flex;
   position: relative;
+  width: 1040px;
 }
 
 .slide2,
 .slide3{
-  display: none;
   position: relative;
 }
 
@@ -421,7 +428,7 @@ header nav,
   background-color: #ffffff;
 }
 
-.slide:after {
+.slide1:after {
   content: "01";
   position: absolute;
   top: -15px;
@@ -433,12 +440,49 @@ header nav,
   color: #ffffff;
 }
 
+.slide2:after {
+  content: "02";
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-family: "Gilroy", Arial, sans-serif;;
+  font-size: 180px;
+  line-height: 180px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.slide3:after {
+  content: "03";
+  position: absolute;
+  top: -15px;
+  right: -10px;
+  font-family: "Gilroy", Arial, sans-serif;;
+  font-size: 180px;
+  line-height: 180px;
+  font-weight: 800;
+  color: #ffffff;
+  z-index: -1;
+}
+
 .controls-slider {
   display: flex;
   width: 100px;
   position: absolute;
-  right: 84px;
+  right: 20px;
   bottom: 158px;
+}
+
+.slider-device #slide1:checked ~ .slider-inner {
+  transform: translateX(0);
+}
+
+.slider-device #slide2:checked ~ .slider-inner {
+  transform: translateX(-1040px);
+}
+
+.slider-device #slide3:checked ~ .slider-inner {
+  transform: translateX(-2080px);
 }
 
 .controls-slider label {
@@ -482,6 +526,11 @@ header nav,
   width: 500px;
   margin: 0 40px 0 0;
   padding: 0 30px;
+}
+
+.slide3 .slider-img {
+  margin: 0 80px 0 -40px;
+  padding: 60px 30px 0 0;
 }
 
 .slider-info {
@@ -691,21 +740,22 @@ header nav,
   position: relative;
   display: flex;
   width: 2280px;
+  overflow: hidden;
 }
 
 .services-description {
-  width: 760px;
+  width: 840px;
 }
 
-.wrapper-inner-services #services1:checked ~ .slider-services .services-description:nth-child(1) {
+.wrapper-inner-services #services1:checked ~ .slider-services {
   transform: translateX(0);
 }
 
-.wrapper-inner-services #services2:checked ~ .slider-services .services-description:nth-child(2) {
+.wrapper-inner-services #services2:checked ~ .slider-services  {
   transform: translateX(-760px);
 }
 
-.wrapper-inner-services #services3:checked ~ .slider-services .services-description:nth-child(3) {
+.wrapper-inner-services #services3:checked ~ .slider-services {
   transform: translateX(-1520px);
 }
 
