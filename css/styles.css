@@ -15,7 +15,24 @@
   font-style: normal;
 }
 
+body > * {
+  outline: 1px solid red;
+}
 
+body > * > * {
+  outline: 1px dashed blue;
+  outline-offset: -1px;
+}
+
+body > * > * > * {
+  outline: 1px dashed green;
+  outline-offset: -1px;
+}
+
+body > * > * > * > * {
+  outline: 1px dashed gray;
+  outline-offset: -1px;
+}
 
 body,
 .inner-page {
@@ -69,14 +86,14 @@ input[type="radio"].visually-hidden {
 .button {
   display: inline-block;
   position: relative;
-  padding: 0 50px;
+  padding: 0 45px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 46px;
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
 }
 
 .button:before {
@@ -232,7 +249,7 @@ header nav,
 
 .user-link {
   position: relative;
-  padding: 0 0 0 30px;
+  padding: 0 0 0 25px;
   color: #000000;
   transition: 0.4s;
 }
@@ -245,7 +262,7 @@ header nav,
   content: "";
   position: absolute;
   top: calc(50% - 6px);
-  left: 5px;
+  left: 0;
   width: 13px;
   height: 13px;
   background: url("../img/user.svg") no-repeat 0 0;
@@ -306,7 +323,7 @@ header nav,
   font-weight: 800;
   color: #000000;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.2em;
   transition: 0.4s;
 }
 
@@ -500,7 +517,7 @@ header nav,
 }
 
 .device-parameters-value  td {
-  padding: 0 70px 0 0;
+  padding: 0 74px 5px 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
@@ -569,7 +586,7 @@ header nav,
 .services {
   margin: 0 0 85px 0;
   padding: 75px 0;
-  background: linear-gradient(to bottom, #ffffff 0px, #ffffff 175px, #e5e5e5 175px)  ;
+  background: linear-gradient(to bottom, #ffffff 0px, #ffffff 180px, #e5e5e5 180px)  ;
 }
 
 .services .wrapper-inner {
@@ -585,7 +602,7 @@ header nav,
   flex-direction: column;
   align-items: flex-start;
   margin: 0 140px 0 0;
-  padding: 0 0 0 10px;
+  padding: 0 0 0 18px;
 }
 
 .services .wrapper-inner:after {
@@ -598,10 +615,11 @@ header nav,
 }
 
 .slider-services-button {
-  width: 190px;
-  margin: 0 0 15px 0;
-  padding: 0 45px;
+  width: 165px;
+  margin: 0 0 22px 0;
+  padding: 0 25px;
   text-align: center;
+  line-height: 40px;
   z-index: 1;
 }
 
@@ -772,7 +790,7 @@ header nav,
 .about-market h2:before {
   content: "";
   position: absolute;
-  top: -50px;
+  top: -55px;
   width: 80px;
   height: 8px;
   background: #000000;
@@ -803,7 +821,7 @@ header nav,
   content: "";
   position: absolute;
   top: calc(50% - 4px);
-  left: 10px;
+  left: 0;
   width: 8px;
   height: 8px;
   border: 2px solid #e5e5e5;
@@ -819,8 +837,9 @@ header nav,
 }
 
 .about-market .button {
+  padding: 0 30px;
   display: inline-block;
-  margin: 50px 0 70px 0;
+  margin: 53px 0 80px 0;
 }
 
 /*------------ FOOTER -----------*/
@@ -872,13 +891,14 @@ header nav,
 .user-block-footer {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 325px;
+  align-items: flex-start;
+  width: 328px;
 }
 
 .user-block-footer a {
+  padding: 0 0 15px 30px;
   color: rgba(255, 255, 255, 0.7);
-  line-height: 36px;
+  line-height: 16px;
   transition: 0.4s;
 }
 
@@ -900,7 +920,7 @@ header nav,
 .user-link-login-footer:before {
   content: "";
   position: absolute;
-  top: calc(50% - 6px);
+  top: 3px;
   left: 5px;
   width: 13px;
   height: 13px;
@@ -911,7 +931,7 @@ header nav,
 .user-link-compare-footer:before {
   content: "";
   position: absolute;
-  top: calc(50% - 5px);
+  top: 3px;
   left: 5px;
   width: 13px;
   height: 13px;
@@ -922,7 +942,7 @@ header nav,
 .user-link-basket-footer:before {
   content: "";
   position: absolute;
-  top: calc(50% - 6px);
+  top: 3px;
   left: 5px;
   width: 13px;
   height: 13px;
@@ -934,11 +954,12 @@ header nav,
   margin: 0 0 60px 0;
 }
 
-.footer-nav-list {
+ul.footer-nav-list {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 440px;
+  width: 430px;
+  margin: 0 30px 0 0;
 }
 
 .footer-nav-list a {
@@ -947,7 +968,7 @@ header nav,
   line-height: 24px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   transition: 0.4s;
 }
 
@@ -967,8 +988,8 @@ header nav,
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 160px;
-  margin: 0;
+  width: 145px;
+  margin: 0 45px 0 0;
   padding: 0;
 }
 
@@ -1030,11 +1051,14 @@ header nav,
 /*------------ MODAL-LOGIN   -----------*/
 
 .modal-login {
-  position: relative;
+  position: fixed;
+  top: calc(50% - 300px);
+  right: calc(50% - 480px);
   width: 960px;
   padding: 100px;
   background: #ffffff;
   box-shadow: 0 0 20px 10px rgba(4, 6, 6, 0.3);
+  z-index: 100;
 }
 
 .modal-login-close {
@@ -1267,7 +1291,7 @@ header nav,
   line-height: 24px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 3px;
+  letter-spacing: 0.2em;
   color: #000000;
 }
 
@@ -1455,6 +1479,16 @@ input[type="checkbox"]:checked + .filter-input:after {
   opacity: 1;
 }
 
+input[type="checkbox"]:not(checked):hover + .filter-input:before,
+input[type="checkbox"]:not(checked):hover + .filter-input:after {
+  opacity: 0.6;
+}
+
+input[type="checkbox"]:not(checked):active + .filter-input:before,
+input[type="checkbox"]:not(checked):active + .filter-input:after {
+  opacity: 1;
+}
+
 input[type="checkbox"]:disabled + .filter-input {
   color: #a6a6a6;
 }
@@ -1495,6 +1529,16 @@ input[type="radio"]:disabled + .filter-input {
 
 input[type="radio"]:disabled + .filter-input:before {
   opacity: 0.25;
+}
+
+input[type="radio"]:not(checked):hover + .filter-input:before,
+input[type="radio"]:not(checked):hover + .filter-input:after {
+  opacity: 0.6;
+}
+
+input[type="radio"]:not(checked):active + .filter-input:before,
+input[type="radio"]:not(checked):active + .filter-input:after {
+  opacity: 1;
 }
 
 .filter-button {
@@ -1681,7 +1725,7 @@ input[type="radio"]:disabled + .filter-input:before {
   line-height: 24px;
   font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 0.2em;
   color: #000000;
 }
 
