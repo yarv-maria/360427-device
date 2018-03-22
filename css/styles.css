@@ -594,6 +594,7 @@ header nav,
   display: flex;
   align-items: center;
   padding: 65px 0;
+  overflow: hidden;
 }
 
 .controls-services {
@@ -601,7 +602,7 @@ header nav,
   width: 280px;
   flex-direction: column;
   align-items: flex-start;
-  margin: 0 140px 0 0;
+  margin: 0 240px 0 0;
   padding: 0 0 0 18px;
 }
 
@@ -687,7 +688,25 @@ header nav,
 }
 
 .slider-services {
+  position: relative;
+  display: flex;
+  width: 2280px;
+}
+
+.services-description {
   width: 760px;
+}
+
+.wrapper-inner-services #services1:checked ~ .slider-services .services-description:nth-child(1) {
+  transform: translateX(0);
+}
+
+.wrapper-inner-services #services2:checked ~ .slider-services .services-description:nth-child(2) {
+  transform: translateX(-760px);
+}
+
+.wrapper-inner-services #services3:checked ~ .slider-services .services-description:nth-child(3) {
+  transform: translateX(-1520px);
 }
 
 .slider-services h2,
@@ -706,13 +725,11 @@ header nav,
 }
 
 .services-security {
-  display: none;
   background: url("../img/warranty.svg") no-repeat;
   background-position: 560px 10px;
 }
 
 .services-credit {
-  display: none;
   background: url("../img/credit.svg") no-repeat;
   background-position: 560px 10px;
 }
@@ -1051,6 +1068,7 @@ ul.footer-nav-list {
 /*------------ MODAL-LOGIN   -----------*/
 
 .modal-login {
+  display: none;
   position: fixed;
   top: calc(50% - 300px);
   right: calc(50% - 480px);
