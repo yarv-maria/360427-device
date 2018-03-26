@@ -1784,6 +1784,11 @@ input[type="radio"]:checked:focus + .filter-input::after{
   color: #000000;
 }
 
+.product-image {
+  display: flex;
+  flex-grow: 1;
+}
+
 .product-price {
   font-size: 16px;
   line-height: 24px;
