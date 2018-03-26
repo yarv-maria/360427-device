@@ -37,6 +37,7 @@ body > * > * > * > * {
 body,
 .inner-page {
   width: 100%;
+  min-width: 1200px;
   margin: 0;
   padding: 0;
   font-family: "Open Sans", Arial, sans-serif;
@@ -84,6 +85,7 @@ input[type="radio"].visually-hidden {
 
 .button {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   padding: 0 45px;
   font-family: "Gilroy", Arial, sans-serif;
@@ -305,12 +307,8 @@ header nav,
   color: rgba(0, 0, 0, 0.3);
 }
 
-.user-link-login:hover::before,
-.user-link-login:focus::before,
-.user-link-compare:hover::before,
-.user-link-compare:focus::before,
-.user-link-basket:hover::before,
-.user-link-basket:focus::before {
+.user-link:hover::before,
+.user-link:focus::before {
   opacity: 0.8;
 }
 
@@ -475,6 +473,10 @@ header nav,
   position: absolute;
   right: 80px;
   bottom: 158px;
+}
+
+.controls-slider:focus {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 .slider-device #slide1:checked ~ .slider-inner {
@@ -909,11 +911,13 @@ header nav,
 
 .contact-map {
   display: inline-block;
+  vertical-align: top;
 }
 
 .about-market .button {
   padding: 0 30px;
   display: inline-block;
+  vertical-align: top;
   margin: 53px 0 80px 0;
 }
 
@@ -1072,6 +1076,10 @@ ul.footer-nav-list {
 }
 
 .social-icons {
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
   opacity: 0.3;
 }
 
@@ -1085,23 +1093,14 @@ ul.footer-nav-list {
 }
 
 .social-icons .facebook {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
   background: url("../img/fb.svg");
 }
 
 .social-icons .twitter {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
   background: url("../img/twitter.svg");
 }
 
 .social-icons .instagram {
-  display: inline-block;
-  width: 32px;
-  height: 32px;
   background: url("../img/instagram.svg");
 }
 
@@ -1285,7 +1284,7 @@ ul.footer-nav-list {
 
 /*------------ BREADCRUMBS   -----------*/
 .breadcrumbs {
-  margin: 0 0 40px 0;
+  margin: 0 0 45px 0;
 }
 
 .wrapper-inner-breadcrumbs h1,
@@ -1298,6 +1297,7 @@ ul.footer-nav-list {
 }
 
 .wrapper-inner-breadcrumbs h1 {
+  margin: 35px 0 25px 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -1314,19 +1314,20 @@ ul.footer-nav-list {
 }
 
 .breadcrumbs-list li {
-  margin: 0 10px 0 0;
+  margin: 0 20px 0 0;
 }
 
 .breadcrumbs-list a {
+  display: block;
   position: relative;
-  padding: 0 30px 0 0;
+  padding: 0 17px 0 0;
 }
 
 .breadcrumbs-list a::after {
   content: "";
   position: absolute;
   top: calc(50% - 3px);
-  right: -20px;
+  right: 0;
   width: 6px;
   height: 6px;
   border: 1px solid transparent;
@@ -1388,7 +1389,7 @@ ul.footer-nav-list {
 }
 
 .filters h3 {
-  margin: 0 0 80px 0;
+  margin: 0 0 70px 0;
 }
 
 .sorting,
@@ -1412,7 +1413,7 @@ ul.footer-nav-list {
 }
 
 .filters legend {
-  margin: 15px 0 0 0;
+  padding: 10px 0 0 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1450,17 +1451,21 @@ ul.footer-nav-list {
 
 fieldset {
   position: relative;
-  margin:  0 0 50px 0;
+  margin:  0 0 30px 0;
   padding: 0;
   border: none;
 }
 
 .fieldset-color {
-  margin:  0 0 30px 0;
+  margin:  0 0 16px 0;
+}
+
+.fieldset-color legend {
+  margin: 0 0 8px 0;
 }
 
 .fieldset-bluetooth {
-  margin: 0 0 15px 0;
+  margin: 0 0 17px 0;
 }
 
 legend::before {
@@ -1468,7 +1473,7 @@ legend::before {
   position: absolute;
   top: 0;
   width: 200px;
-  height: 1.5px;
+  height: 2px;
   background: #000000;
 }
 
@@ -1478,7 +1483,7 @@ fieldset ul {
 
 .range {
   position: relative;
-  margin: 30px 0 0 0;
+  margin: 35px 0 0 0;
 }
 
 .line {
@@ -1509,8 +1514,8 @@ fieldset ul {
 }
 
 .toggle:active {
-  width: 25px;
-  height: 25px;
+  width: 22px;
+  height: 22px;
 }
 
 .toggle-max {
@@ -1550,7 +1555,7 @@ fieldset ul {
   color: #000000;
 }
 
-input[type="checkbox"]:not(checked) + .filter-input::before {
+input[type="checkbox"] + .filter-input::before {
   content: "";
   position: absolute;
   top: calc(50% - 12px);
@@ -1561,39 +1566,23 @@ input[type="checkbox"]:not(checked) + .filter-input::before {
   background: url("../img/checkbox-off.svg") no-repeat 0 0;
 }
 
-input[type="checkbox"]:not(checked):focus + .filter-input::before,
-input[type="checkbox"]:checked:focus + .filter-input::after {
-  outline: rgb(59, 153, 252) auto 5px;
-}
-
-input[type="checkbox"]:not(checked) + .filter-input::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 12px);
-  left: -40px;
-  display: block;
+input[type="checkbox"]:checked + .filter-input::before {
   width: 27px;
   height: 27px;
   background: url("../img/checkbox-on.svg") no-repeat 0 0;
-  opacity: 0;
 }
 
-input[type="checkbox"]:checked:hover + .filter-input::after {
+input[type="checkbox"]:checked:hover + .filter-input::before,
+input[type="checkbox"]:hover + .filter-input::before {
   opacity: 0.6;
 }
 
-input[type="checkbox"]:checked + .filter-input::after {
+input[type="checkbox"]:active + .filter-input::before {
   opacity: 1;
 }
 
-input[type="checkbox"]:not(checked):hover + .filter-input::before,
-input[type="checkbox"]:not(checked):focus + .filter-input::before{
-  opacity: 0.6;
-}
-
-input[type="checkbox"]:not(checked):active + .filter-input::before,
-input[type="checkbox"]:not(checked):active + .filter-input::after {
-  opacity: 1;
+input[type="checkbox"]:focus + .filter-input::before {
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 input[type="checkbox"]:disabled + .filter-input {
@@ -1604,7 +1593,7 @@ input[type="checkbox"]:disabled + .filter-input::before {
   opacity: 0.25;
 }
 
-input[type="radio"]:not(checked) + .filter-input::before {
+input[type="radio"] + .filter-input::before {
   content: "";
   position: absolute;
   top: calc(50% - 12px);
@@ -1615,20 +1604,8 @@ input[type="radio"]:not(checked) + .filter-input::before {
   background: url("../img/radio-off.svg") no-repeat 0 0;
 }
 
-input[type="radio"]:not(checked) + .filter-input::after {
-  content: "";
-  position: absolute;
-  top: calc(50% - 12px);
-  left: -40px;
-  display: block;
-  width: 25px;
-  height: 25px;
+input[type="radio"]:checked + .filter-input::before {
   background: url("../img/radio-on.svg") no-repeat 0 0;
-  opacity: 0;
-}
-
-input[type="radio"]:checked + .filter-input::after {
-  opacity: 1;
 }
 
 input[type="radio"]:disabled + .filter-input {
@@ -1639,22 +1616,16 @@ input[type="radio"]:disabled + .filter-input::before {
   opacity: 0.25;
 }
 
-input[type="radio"]:checked:hover + .filter-input::before,
-input[type="radio"]:checked:hover + .filter-input::after {
+input[type="radio"]:hover + .filter-input::before,
+input[type="radio"]:checked:hover + .filter-input::before{
   opacity: 0.6;
 }
 
-input[type="radio"]:not(checked):hover + .filter-input::before {
-  opacity: 0.6;
-}
-
-input[type="radio"]:not(checked):active + .filter-input::before,
-input[type="radio"]:not(checked):active + .filter-input::after {
+input[type="radio"]:active + .filter-input::before {
   opacity: 1;
 }
 
-input[type="radio"]:not(checked):focus + .filter-input::before,
-input[type="radio"]:checked:focus + .filter-input::after{
+input[type="radio"]:focus + .filter-input::before {
   outline: rgb(59, 153, 252) auto 5px;
 }
 
@@ -1767,7 +1738,7 @@ input[type="radio"]:checked:focus + .filter-input::after{
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 20px 0 0 0;
+  margin: 30px 0 0 0;
 }
 
 .product-item-wrapper h3 {
@@ -1787,6 +1758,18 @@ input[type="radio"]:checked:focus + .filter-input::after{
 .product-image {
   display: flex;
   flex-grow: 1;
+}
+
+.product-image:last-child::after {
+  content: "NEW";
+  display: block;
+  position: absolute;
+  padding: 15px;
+  border: 1px solid black;
+  border-radius: 50%;
+  opacity: 0.2;
+  z-index: 99;
+
 }
 
 .product-price {
@@ -1823,6 +1806,11 @@ input[type="radio"]:checked:focus + .filter-input::after{
   z-index: 1;
 }
 
+.product-buy button {
+  border: none;
+  background: transparent;
+}
+
 .product-item:hover .product-buy,
 .product-image:focus .product-buy {
   display: flex;
@@ -1843,6 +1831,7 @@ input[type="radio"]:checked:focus + .filter-input::after{
 .backward a,
 .forward a {
   display: inline-block;
+  vertical-align: top;
   padding: 24px 30px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
@@ -1879,6 +1868,7 @@ input[type="radio"]:checked:focus + .filter-input::after{
 
 .page-number a {
   display: inline-block;
+  vertical-align: top;
   margin: 0 15px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
