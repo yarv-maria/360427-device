@@ -90,7 +90,6 @@ input[type="radio"].visually-hidden {
   position: relative;
   display: inline-block;
   vertical-align: top;
-  position: relative;
   padding: 0 45px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
@@ -116,10 +115,10 @@ input[type="radio"].visually-hidden {
 }
 
 .button:hover::before,
-.button:focus::before{
-  top: 0;
-  height: 100%;
-}
+ .button:focus::before{
+   top: 0;
+   height: 100%;
+ }
 
 .button:active {
   color: rgba(0, 0, 0, 0.3);
@@ -257,15 +256,15 @@ header nav,
   color: rgba(0, 0, 0, 0.6);
 }
 
-.header-items-searcht input:focus input::-webkit-input-placeholder {
+.header-items-search input:focus input::-webkit-input-placeholder {
   color: #000000;
 }
 
-.header-items-searcht input:focus input:-ms-input-placeholder {
+.header-items-search input:focus input:-ms-input-placeholder {
   color: #000000;
 }
 
-.header-items-searcht input:focus input::-ms-input-placeholder {
+.header-items-search input:focus input::-ms-input-placeholder {
   color: #000000;
 }
 
