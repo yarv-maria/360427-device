@@ -653,7 +653,7 @@ header nav,
 .services .wrapper-inner {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   overflow: hidden;
 }
 
@@ -788,7 +788,7 @@ header nav,
 }
 
 .services-description h2 {
-  margin: 5px 0 30px 0;
+  margin: 20px 0 30px 0;
 }
 
 .services-description p {
@@ -1128,21 +1128,30 @@ ul.footer-nav-list {
   background-color: #ffc600;
 }
 
-/*------------ MODAL-LOGIN   -----------*/
+/*------------ MODAL -----------*/
 
-.modal-login {
+.modal {
   display: none;
-  position: fixed;
-  top: calc(50% - 300px);
-  right: calc(50% - 480px);
   width: 960px;
-  padding: 100px;
+  position: fixed;
+  right: calc(50% - 480px);
   background: #ffffff;
   box-shadow: 0 0 20px 10px rgba(4, 6, 6, 0.3);
   z-index: 100;
 }
 
-.modal-login-close {
+.modal-map {
+  height: 560px;
+  top: calc(50% - 280px);
+}
+
+.modal-login {
+  top: calc(50% - 300px);
+  padding: 100px;
+  background: #ffffff;
+}
+
+.modal-close {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -1154,12 +1163,12 @@ ul.footer-nav-list {
   transition: 0.4s;
 }
 
-.modal-login-close:hover,
-.modal-login-close:focus {
+.modal-close:hover,
+.modal-close:focus {
   opacity: 1;
 }
 
-.modal-login-close:active {
+.modal-close:active {
   opacity: 0.3;
 }
 
@@ -1403,6 +1412,7 @@ ul.footer-nav-list {
 }
 
 .filters legend {
+  margin: 15px 0 0 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -1456,7 +1466,7 @@ fieldset {
 legend::before {
   content: "";
   position: absolute;
-  top: -12px;
+  top: 0;
   width: 200px;
   height: 1.5px;
   background: #000000;
@@ -1496,6 +1506,11 @@ fieldset ul {
   box-shadow: 0 2px 0 0 #dadada;
   cursor: pointer;
   z-index: 1;
+}
+
+.toggle:active {
+  width: 25px;
+  height: 25px;
 }
 
 .toggle-max {
@@ -1546,6 +1561,11 @@ input[type="checkbox"]:not(checked) + .filter-input::before {
   background: url("../img/checkbox-off.svg") no-repeat 0 0;
 }
 
+input[type="checkbox"]:not(checked):focus + .filter-input::before,
+input[type="checkbox"]:checked:focus + .filter-input::after {
+  outline: rgb(59, 153, 252) auto 5px;
+}
+
 input[type="checkbox"]:not(checked) + .filter-input::after {
   content: "";
   position: absolute;
@@ -1558,12 +1578,16 @@ input[type="checkbox"]:not(checked) + .filter-input::after {
   opacity: 0;
 }
 
+input[type="checkbox"]:checked:hover + .filter-input::after {
+  opacity: 0.6;
+}
+
 input[type="checkbox"]:checked + .filter-input::after {
   opacity: 1;
 }
 
 input[type="checkbox"]:not(checked):hover + .filter-input::before,
-input[type="checkbox"]:not(checked):hover + .filter-input::after {
+input[type="checkbox"]:not(checked):focus + .filter-input::before{
   opacity: 0.6;
 }
 
@@ -1575,6 +1599,7 @@ input[type="checkbox"]:not(checked):active + .filter-input::after {
 input[type="checkbox"]:disabled + .filter-input {
   color: #a6a6a6;
 }
+
 input[type="checkbox"]:disabled + .filter-input::before {
   opacity: 0.25;
 }
@@ -1614,14 +1639,23 @@ input[type="radio"]:disabled + .filter-input::before {
   opacity: 0.25;
 }
 
-input[type="radio"]:not(checked):hover + .filter-input::before,
-input[type="radio"]:not(checked):hover + .filter-input::after {
+input[type="radio"]:checked:hover + .filter-input::before,
+input[type="radio"]:checked:hover + .filter-input::after {
+  opacity: 0.6;
+}
+
+input[type="radio"]:not(checked):hover + .filter-input::before {
   opacity: 0.6;
 }
 
 input[type="radio"]:not(checked):active + .filter-input::before,
 input[type="radio"]:not(checked):active + .filter-input::after {
   opacity: 1;
+}
+
+input[type="radio"]:not(checked):focus + .filter-input::before,
+input[type="radio"]:checked:focus + .filter-input::after{
+  outline: rgb(59, 153, 252) auto 5px;
 }
 
 .filter-button {
