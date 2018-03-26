@@ -87,6 +87,7 @@ input[type="radio"].visually-hidden {
 }
 
 .button {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   position: relative;
@@ -308,6 +309,7 @@ header nav,
 }
 
 .user-link-login {
+  position: relative;
   margin: 0 auto 0 0;
 }
 
@@ -325,6 +327,7 @@ header nav,
 }
 
 .user-link-compare {
+  position: relative;
   margin: 0 30px 0 0;
 }
 
@@ -339,6 +342,10 @@ header nav,
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+}
+
+.user-link-basket {
+  position: relative;
 }
 
 .user-link-basket::before {
@@ -1128,6 +1135,13 @@ header nav,
   transition: 0.4s;
 }
 
+.user-link-login-footer,
+.user-link-compare-footer,
+.user-link-basket-footer {
+  position: relative;
+}
+
+
 .user-link-login-footer::before {
   content: "";
   position: absolute;
@@ -1279,6 +1293,10 @@ ul.footer-nav-list {
 
 .htmlacademy-logo:active {
   opacity: 0.3;
+}
+
+.footer-row-bottom {
+  position: relative;
 }
 
 .footer-row-bottom::before {
@@ -1446,6 +1464,7 @@ ul.footer-nav-list {
 }
 
 .button-modal-form {
+  position: relative;
   z-index: 1;
 }
 
@@ -1618,6 +1637,7 @@ ul.footer-nav-list {
 }
 
 .filters legend {
+  position: relative;
   padding: 10px 0 0 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
