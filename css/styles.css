@@ -1076,10 +1076,6 @@ ul.footer-nav-list {
 }
 
 .social-icons {
-  display: inline-block;
-  vertical-align: top;
-  width: 32px;
-  height: 32px;
   opacity: 0.3;
 }
 
@@ -1093,14 +1089,26 @@ ul.footer-nav-list {
 }
 
 .social-icons .facebook {
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
   background: url("../img/fb.svg");
 }
 
 .social-icons .twitter {
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
   background: url("../img/twitter.svg");
 }
 
 .social-icons .instagram {
+  display: inline-block;
+  vertical-align: top;
+  width: 32px;
+  height: 32px;
   background: url("../img/instagram.svg");
 }
 
@@ -1769,7 +1777,6 @@ input[type="radio"]:focus + .filter-input::before {
   border-radius: 50%;
   opacity: 0.2;
   z-index: 99;
-
 }
 
 .product-price {
