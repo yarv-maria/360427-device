@@ -842,7 +842,7 @@ header nav,
 }
 
 .slider-services {
-  width: 800px;
+  width: 880px;
   overflow: hidden;
 }
 
@@ -855,7 +855,7 @@ header nav,
 }
 
 .services-description {
-  width: 1160px;
+  width: 880px;
   padding: 60px 0 60px 120px;
 }
 
@@ -866,15 +866,15 @@ header nav,
 }
 
 .wrapper-inner-services #services2:checked ~ .slider-services  {
-  -webkit-transform: translateX(-1160px);
-  -ms-transform: translateX(-1160px);
-  transform: translateX(-1160px);
+  -webkit-transform: translateX(-880px);
+  -ms-transform: translateX(-880px);
+  transform: translateX(-880px);
 }
 
 .wrapper-inner-services #services3:checked ~ .slider-services {
-  -webkit-transform: translateX(-2320px);
-  -ms-transform: translateX(-2320px);
-  transform: translateX(-2320px);
+  -webkit-transform: translateX(-1760px);
+  -ms-transform: translateX(-1760px);
+  transform: translateX(-1760px);
 }
 
 .slider-services h2,
