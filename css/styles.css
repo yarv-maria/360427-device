@@ -541,7 +541,8 @@ header nav,
 }
 
 .controls-slider:focus {
-  outline: rgb(59, 153, 252) auto 5px;
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .slider-device #slide1:checked ~ .slider-inner {
@@ -649,7 +650,7 @@ header nav,
 }
 
 .device-parameters-value  td {
-  padding: 0 74px 5px 0;
+  padding: 0 73px 5px 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 36px;
   line-height: 48px;
@@ -1821,7 +1822,8 @@ input[type="checkbox"]:active + .filter-input::before {
 }
 
 input[type="checkbox"]:focus + .filter-input::before {
-  outline: rgb(59, 153, 252) auto 5px;
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 input[type="checkbox"]:disabled + .filter-input {
@@ -1865,7 +1867,8 @@ input[type="radio"]:active + .filter-input::before {
 }
 
 input[type="radio"]:focus + .filter-input::before {
-  outline: rgb(59, 153, 252) auto 5px;
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .filter-button {
