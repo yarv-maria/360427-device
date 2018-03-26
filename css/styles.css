@@ -842,6 +842,11 @@ header nav,
 }
 
 .slider-services {
+  width: 800px;
+  overflow: hidden;
+}
+
+.slider-services-inner {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -968,7 +973,7 @@ header nav,
   justify-content: space-between;
 }
 
-.company-list,
+.contact,
 .info {
   width: 560px;
 }
