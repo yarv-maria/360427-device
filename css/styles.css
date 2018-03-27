@@ -15,25 +15,6 @@
   font-style: normal;
 }
 
-body > * {
-  outline: 1px solid red;
-}
-
-body > * > * {
-  outline: 1px dashed blue;
-  outline-offset: -1px;
-}
-
-body > * > * > * {
-  outline: 1px dashed green;
-  outline-offset: -1px;
-}
-
-body > * > * > * > * {
-  outline: 1px dashed gray;
-  outline-offset: -1px;
-}
-
 body,
 .inner-page {
   width: 100%;
