@@ -1364,9 +1364,15 @@ ul.footer-nav-list {
   top: calc(50% - 280px);
 }
 
+.modal-map p {
+  margin: 0;
+  padding: 0;
+}
+
 .modal-map iframe {
   position: relative;
   z-index: 2;
+  border: none;
 }
 
 .modal-login {
