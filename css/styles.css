@@ -924,7 +924,8 @@ header nav,
   opacity: 1;
 }
 
-.logotypes-item:hover img {
+.logotypes-item:hover img,
+.logotypes-item:focus img {
   opacity: 0;
 }
 
