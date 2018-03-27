@@ -256,7 +256,7 @@
           <h2> Контакты </h2>
           <p> Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
             Всякое бывает.</p>
-          <a href="map.html" class="contact-map"> <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу: ул. Строителей 15, г.Москва"> </a>
+          <a href="map.html" class="contact-map contacts-button-map"> <img src="img/map.jpg" width="560" height="222" alt="Офис компании по адресу: ул. Строителей 15, г.Москва"> </a>
           <a href="login.html" class="button write-us"> Напишите нам </a>
         </section>
       </div>
@@ -328,7 +328,7 @@
   <section class="modal modal-map">
     <h2 class="visually-hidden"> Как до нас добраться </h2>
     <p>
-      <iframe class="map"> </iframe>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037999040354!2d30.322010416394033!3d59.938716271971415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+ul.%2C+19%2C+Sankt-Peterburg%2C+Russia%2C+191186!5e0!3m2!1sen!2s!4v1441888483426" width="960" height="560" allowfullscreenclass="map"> </iframe>
     </p>
     <button class="modal-close" type="button"> <span class="visually-hidden"> Закрыть </span> </button>
   </section>
@@ -391,6 +391,30 @@
         if (popup.classList.contains("modal-show")) {
           popup.classList.remove("modal-show");
           popup.classList.remove("modal-error");
+        }
+      }
+    });
+
+    var mapLink = document.querySelector(".contacts-button-map");
+
+    var mapPopup = document.querySelector(".modal-map");
+    var mapClose = mapPopup.querySelector(".modal-close");
+
+    mapLink.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.add("modal-show");
+    });
+
+    mapClose.addEventListener("click", function (evt) {
+      evt.preventDefault();
+      mapPopup.classList.remove("modal-show");
+    });
+
+    window.addEventListener("keydown", function (evt) {
+      evt.preventDefault();
+      if (evt.keyCode === 27) {
+        if (mapPopup.classList.contains("modal-show")) {
+          mapPopup.classList.remove("modal-show");
         }
       }
     });

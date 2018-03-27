@@ -496,8 +496,7 @@ header nav,
   background-color: #ffffff;
 }
 
-.slide1::after {
-  content: "01";
+.slide::after {
   position: absolute;
   top: -15px;
   right: 50px;
@@ -506,31 +505,20 @@ header nav,
   line-height: 180px;
   font-weight: 800;
   color: #ffffff;
+}
+
+.slide1::after {
+  content: "01";
 }
 
 .slide2::after {
   content: "02";
   position: absolute;
-  top: -15px;
-  right: 50px;
-  font-family: "Gilroy", Arial, sans-serif;;
-  font-size: 180px;
-  line-height: 180px;
-  font-weight: 800;
-  color: #ffffff;
   z-index: 1  ;
 }
 
 .slide3::after {
   content: "03";
-  position: absolute;
-  top: -15px;
-  right: 50px;
-  font-family: "Gilroy", Arial, sans-serif;;
-  font-size: 180px;
-  line-height: 180px;
-  font-weight: 800;
-  color: #ffffff;
   z-index: -1;
 }
 
@@ -544,7 +532,7 @@ header nav,
   bottom: 158px;
 }
 
-.controls-slider:focus {
+.controls-slider label:focus {
   outline: 1px dotted #212121;
   outline: 5px auto -webkit-focus-ring-color;
 }
@@ -1373,6 +1361,11 @@ ul.footer-nav-list {
 .modal-map {
   height: 560px;
   top: calc(50% - 280px);
+}
+
+.modal-map iframe {
+  position: relative;
+  z-index: 2;
 }
 
 .modal-login {
