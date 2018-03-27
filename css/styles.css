@@ -1387,6 +1387,7 @@ ul.footer-nav-list {
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
   transition: 0.4s;
+  z-index: 3;
 }
 
 .modal-close:hover,
