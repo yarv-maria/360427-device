@@ -532,11 +532,6 @@ header nav,
   bottom: 158px;
 }
 
-.controls-slider label:focus {
-  outline: 1px dotted #212121;
-  outline: 5px auto -webkit-focus-ring-color;
-}
-
 .slider-device #slide1:checked ~ .slider-inner {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
@@ -592,6 +587,13 @@ header nav,
   height: 13px;
   background: url("../img/slider-button.svg") no-repeat 0 0;
   z-index: 101;
+}
+
+.slider-device #slide1:focus ~ .controls-slider label:nth-of-type(1)::before,
+.slider-device #slide2:focus ~ .controls-slider label:nth-of-type(2)::before,
+.slider-device #slide3:focus ~ .controls-slider label:nth-of-type(3)::before {
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .slider-img {
@@ -825,6 +827,13 @@ header nav,
   padding: 8px 110px 8px 0;
   background-color: #000000;
   color: #f7e184;
+}
+
+.services #services1:focus ~ .controls-services .slider-services-button:nth-of-type(1),
+.services #services2:focus ~ .controls-services .slider-services-button:nth-of-type(2),
+.services #services3:focus ~ .controls-services .slider-services-button:nth-of-type(3) {
+  outline: 1px dotted #212121;
+  outline: 5px auto -webkit-focus-ring-color;
 }
 
 .slider-services {
