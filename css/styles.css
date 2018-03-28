@@ -525,19 +525,19 @@ header nav,
   bottom: 158px;
 }
 
-.slider-device #slide1:checked ~ .slider-inner {
+.slider-device .slide1-id:checked ~ .slider-inner {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
-.slider-device #slide2:checked ~ .slider-inner {
+.slider-device .slide2-id:checked ~ .slider-inner {
   -webkit-transform: translateX(-1160px);
   -ms-transform: translateX(-1160px);
   transform: translateX(-1160px);
 }
 
-.slider-device #slide3:checked ~ .slider-inner {
+.slider-device .slide3-id:checked ~ .slider-inner {
   -webkit-transform: translateX(-2320px);
   -ms-transform: translateX(-2320px);
   transform: translateX(-2320px);
@@ -555,7 +555,7 @@ header nav,
   z-index: 100;
 }
 
-.slider-device #slide1:checked ~ .controls-slider label:nth-of-type(1)::before {
+.slider-device .slide1-id:checked ~ .controls-slider label:nth-of-type(1)::before {
   content: "";
   position: absolute;
   width: 13px;
@@ -564,7 +564,7 @@ header nav,
   z-index: 101;
 }
 
-.slider-device #slide2:checked ~ .controls-slider label:nth-of-type(2)::before {
+.slider-device .slide2-id:checked ~ .controls-slider label:nth-of-type(2)::before {
   content: "";
   position: absolute;
   width: 13px;
@@ -573,7 +573,7 @@ header nav,
   z-index: 101;
 }
 
-.slider-device #slide3:checked ~ .controls-slider label:nth-of-type(3)::before {
+.slider-device .slide3-id:checked ~ .controls-slider label:nth-of-type(3)::before {
   content: "";
   position: absolute;
   width: 13px;
@@ -582,9 +582,9 @@ header nav,
   z-index: 101;
 }
 
-.slider-device #slide1:focus ~ .controls-slider label:nth-of-type(1)::before,
-.slider-device #slide2:focus ~ .controls-slider label:nth-of-type(2)::before,
-.slider-device #slide3:focus ~ .controls-slider label:nth-of-type(3)::before {
+.slider-device .slide1-id:focus ~ .controls-slider label:nth-of-type(1)::before,
+.slider-device .slide2-id:focus ~ .controls-slider label:nth-of-type(2)::before,
+.slider-device .slide3-id:focus ~ .controls-slider label:nth-of-type(3)::before {
   outline: 1px dotted #212121;
   outline: 5px auto -webkit-focus-ring-color;
 }
@@ -776,16 +776,16 @@ header nav,
   z-index: 1;
 }
 
-.wrapper-inner-services #services1:checked ~ .controls-services .slider-services-button:nth-of-type(1),
-.wrapper-inner-services #services2:checked ~ .controls-services .slider-services-button:nth-of-type(2),
-.wrapper-inner-services #services3:checked ~ .controls-services .slider-services-button:nth-of-type(3) {
+.wrapper-inner-services .services1:checked ~ .controls-services .slider-services-button:nth-of-type(1),
+.wrapper-inner-services .services2:checked ~ .controls-services .slider-services-button:nth-of-type(2),
+.wrapper-inner-services .services3:checked ~ .controls-services .slider-services-button:nth-of-type(3) {
   color: #f7e184;
   z-index: 100;
 }
 
-.wrapper-inner-services #services1:checked ~ .controls-services .slider-services-button:nth-of-type(1)::before,
-.wrapper-inner-services #services2:checked ~ .controls-services .slider-services-button:nth-of-type(2)::before,
-.wrapper-inner-services #services3:checked ~ .controls-services .slider-services-button:nth-of-type(3)::before {
+.wrapper-inner-services .services1:checked ~ .controls-services .slider-services-button:nth-of-type(1)::before,
+.wrapper-inner-services .services2:checked ~ .controls-services .slider-services-button:nth-of-type(2)::before,
+.wrapper-inner-services .services3:checked ~ .controls-services .slider-services-button:nth-of-type(3)::before {
   content: "";
   position: absolute;
   top: 0;
@@ -796,9 +796,9 @@ header nav,
   color: #f7e184;
 }
 
-.services #services1:focus ~ .controls-services .slider-services-button:nth-of-type(1),
-.services #services2:focus ~ .controls-services .slider-services-button:nth-of-type(2),
-.services #services3:focus ~ .controls-services .slider-services-button:nth-of-type(3) {
+.services .services1:focus ~ .controls-services .slider-services-button:nth-of-type(1),
+.services .services2:focus ~ .controls-services .slider-services-button:nth-of-type(2),
+.services .services3:focus ~ .controls-services .slider-services-button:nth-of-type(3) {
   outline: 1px dotted #212121;
   outline: 5px auto -webkit-focus-ring-color;
 }
@@ -821,19 +821,19 @@ header nav,
   padding: 60px 0 60px 120px;
 }
 
-.wrapper-inner-services #services1:checked ~ .slider-services .slider-services-inner {
+.wrapper-inner-services .services1:checked ~ .slider-services .slider-services-inner {
   -webkit-transform: translateX(0);
   -ms-transform: translateX(0);
   transform: translateX(0);
 }
 
-.wrapper-inner-services #services2:checked ~ .slider-services .slider-services-inner {
+.wrapper-inner-services .services2:checked ~ .slider-services .slider-services-inner {
   -webkit-transform: translateX(-880px);
   -ms-transform: translateX(-880px);
   transform: translateX(-880px);
 }
 
-.wrapper-inner-services #services3:checked ~ .slider-services .slider-services-inner {
+.wrapper-inner-services .services3:checked ~ .slider-services .slider-services-inner {
   -webkit-transform: translateX(-1760px);
   -ms-transform: translateX(-1760px);
   transform: translateX(-1760px);
