@@ -907,17 +907,17 @@ header nav,
 
 .logotypes-item-dgi:hover,
 .logotypes-item-dgi:focus {
-  background-image: url("../img/logotypes-Dji-hover.jpg");
+  background-image: url("../img/logotypes-dji-hover.jpg");
 }
 
 .logotypes-item-spgadgest:hover,
 .logotypes-item-spgadgest:focus {
-  background-image: url("../img/logotypes-SPGadgest-hover.jpg");
+  background-image: url("../img/logotypes-spgadgest-hover.jpg");
 }
 
 .logotypes-item-gopro:hover,
 .logotypes-item-gopro:focus {
-  background-image: url("../img/logotypes-GoPro-hover.jpg");
+  background-image: url("../img/logotypes-gopro-hover.jpg");
 }
 
 .logotypes-item-vive:hover,
