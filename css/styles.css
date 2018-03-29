@@ -436,7 +436,8 @@ header nav,
   opacity: 0.3;
 }
 
-.catalog-product:hover .header-nav-sub {
+.catalog-product:hover .header-nav-sub,
+.catalog-product-button:focus ~ .header-nav-sub {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -695,7 +696,8 @@ header nav,
   transition: 0.4s;
 }
 
-.popular-item:hover .popular-item-img {
+.popular-item:hover .popular-item-img,
+.popular-item:focus .popular-item-img{
   background-color: #f0c52e;
 }
 
@@ -2024,7 +2026,7 @@ input[type="radio"]:focus + .filter-input::before {
 .sorting-list-left a {
   font-size: 14px;
   line-height: 18px;
-  font-weight: 600;
+  font-weight: 400;
   color: rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
