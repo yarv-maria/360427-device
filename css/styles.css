@@ -664,10 +664,6 @@ header nav,
   width: 160px;
 }
 
-.popular-item:focus .popular-item-img {
-  background-color: #f0c52e;
-}
-
 .popular-item p {
   width: 160px;
   height: 160px;
@@ -699,7 +695,7 @@ header nav,
   transition: 0.4s;
 }
 
-.popular-item-img:hover {
+.popular-item:hover .popular-item-img {
   background-color: #f0c52e;
 }
 
@@ -707,7 +703,7 @@ header nav,
   color: rgba(0, 0, 0, 0.3);
 }
 
-.popular-item-img:active img {
+.popular-item:active img  {
   opacity: 0.3;
 }
 
@@ -716,6 +712,8 @@ header nav,
 .services {
   margin: 0 0 85px 0;
   padding: 75px 0 65px 0;
+  background: -webkit-linear-gradient(top, #ffffff 0px, #ffffff 180px, #e5e5e5 180px)  ;
+  background: -o-linear-gradient(top, #ffffff 0px, #ffffff 180px, #e5e5e5 180px)  ;
   background: -webkit-linear-gradient(top, #ffffff 0px, #ffffff 180px, #e5e5e5 180px)  ;
   background: -o-linear-gradient(top, #ffffff 0px, #ffffff 180px, #e5e5e5 180px)  ;
   background: -webkit-linear-gradient(top, #ffffff 0px, #ffffff 180px, #e5e5e5 180px)  ;
@@ -1470,17 +1468,51 @@ ul.footer-nav-list {
 
 .modal-login-form input,
 .modal-login-form textarea {
-  font-family: inherit;
+  font-family: "Open Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
+  font-weight: 400;
   background-color: #f2f2f2;
   border: 2px solid #ffffff;
+}
+
+.modal-login-form input::-webkit-input-placeholder,
+.modal-login-form textarea::-webkit-input-placeholder {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.modal-login-form input:-ms-input-placeholder,
+.modal-login-form textarea:-ms-input-placeholder {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.modal-login-form input::-ms-input-placeholder,
+.modal-login-form textarea::-ms-input-placeholder {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.modal-login-form input::placeholder,
+.modal-login-form textarea::placeholder {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
 }
 
 .modal-login-form input:hover,
 .modal-login-form textarea:hover {
   background-color: #eaeaea;
 }
+
 .modal-login-form input:focus,
 .modal-login-form textarea:focus {
   background-color: #ffffff;
@@ -1986,12 +2018,13 @@ input[type="radio"]:focus + .filter-input::before {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 300px;
+  width: 280px;
 }
 
 .sorting-list-left a {
   font-size: 14px;
   line-height: 18px;
+  font-weight: 600;
   color: rgba(0, 0, 0, 0.3);
   -webkit-transition: 0.4s;
   -o-transition: 0.4s;
@@ -2125,8 +2158,10 @@ input[type="radio"]:focus + .filter-input::before {
 }
 
 .product-price {
+  font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
+  font-weight: 300;
   color: #464646;
 }
 
